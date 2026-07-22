@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>파워클린져스 | 부산·울산·대구·경남·경북 건물외벽청소·유리창청소 전문업체</title>
+<meta name="description" content="경상권(부산·울산·대구·경남·경북) 건물외벽청소, 유리창청소, 특수구역 고압세척 전문업체 파워클린져스. 사진만 보내면 당일 무료 견적. 고층 로프팀 직영 시공, 정기계약 할인.">
+<meta property="og:title" content="파워클린져스 — 경상권 건물외벽·유리창 청소 전문업체">
+<meta property="og:description" content="사진만 보내면 당일 무료 견적. 고층 로프팀 직영 시공.">
+<meta property="og:type" content="website">
+<!-- TODO(P4-1): 네이버 서치어드바이저 소유확인 메타태그 자리 -->
+<!-- TODO(P4-4): 네이버 프리미엄 로그분석 스크립트 자리 -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "파워클린져스",
+  "description": "건물외벽청소, 유리창청소, 특수구역 고압세척 전문업체",
+  "telephone": "+82-507-1468-0941",
+  "areaServed": ["부산광역시","울산광역시","대구광역시","경상남도","경상북도"],
+  "address": {"@type": "PostalAddress", "addressRegion": "[시/도]", "streetAddress": "[사업장 주소 — 사용자 입력 대기]"},
+  "priceRange": "무료 견적"
+}
+</script>
+<style>
+  :root{
+    --navy:#0f2540; --blue:#1667d9; --sky:#eaf2fd; --ink:#1c2733;
+    --gray:#5b6b7b; --line:#e3e9f0; --white:#fff; --accent:#ff8a00;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Apple SD Gothic Neo','Pretendard','Noto Sans KR',sans-serif;color:var(--ink);line-height:1.65}
+  img{max-width:100%;display:block}
+  a{text-decoration:none;color:inherit}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+  section{padding:72px 0}
+  h2{font-size:clamp(24px,4vw,34px);color:var(--navy);text-align:center;margin-bottom:12px}
+  .sub{text-align:center;color:var(--gray);margin-bottom:44px;font-size:clamp(14px,2vw,17px)}
+
+  header{position:sticky;top:0;background:var(--white);border-bottom:1px solid var(--line);z-index:50}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:60px}
+  .logo{font-weight:800;font-size:20px;color:var(--navy)}
+  .logo span{color:var(--blue)}
+  .nav a.call{background:var(--blue);color:#fff;padding:9px 18px;border-radius:8px;font-weight:700;font-size:15px}
+
+  .hero{background:linear-gradient(160deg,var(--navy) 0%,#173a63 60%,#1f4c82 100%);color:#fff;padding:88px 0;text-align:center}
+  .hero .badge{display:inline-block;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);padding:6px 16px;border-radius:999px;font-size:14px;margin-bottom:22px}
+  .hero h1{font-size:clamp(27px,5.2vw,44px);line-height:1.32;margin-bottom:16px;font-weight:800}
+  .hero h1 em{font-style:normal;color:#7fb4ff}
+  .hero p{font-size:clamp(15px,2.4vw,19px);opacity:.9;margin-bottom:34px}
+  .cta-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:15px 28px;border-radius:10px;font-size:17px;font-weight:800}
+  .btn-primary{background:var(--accent);color:#fff}
+  .btn-ghost{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.4);color:#fff}
+
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+  .card{border:1px solid var(--line);border-radius:14px;padding:30px 26px;background:var(--white);box-shadow:0 2px 10px rgba(15,37,64,.05)}
+  .card .icon{font-size:34px;margin-bottom:14px}
+  .card h3{font-size:20px;color:var(--navy);margin-bottom:10px}
+  .card p.desc{color:var(--gray);font-size:14.5px;margin-bottom:12px}
+  .card ul{list-style:none;color:var(--gray);font-size:15px}
+  .card li{padding:4px 0 4px 20px;position:relative}
+  .card li::before{content:"✓";position:absolute;left:0;color:var(--blue);font-weight:700}
+
+  .process{background:var(--sky)}
+  .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+  .step{background:var(--white);border-radius:14px;padding:28px 24px;text-align:center;border:1px solid var(--line)}
+  .step .num{width:40px;height:40px;border-radius:50%;background:var(--blue);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;font-size:18px}
+  .step h3{font-size:18px;color:var(--navy);margin-bottom:8px}
+  .step p{color:var(--gray);font-size:14.5px}
+
+  .cases-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+  .case{border-radius:12px;overflow:hidden;border:1px solid var(--line);background:#f4f7fa;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;color:var(--gray);font-size:14px;text-align:center;padding:12px}
+
+  .region{background:var(--sky)}
+  .region-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px}
+  .region-card{background:var(--white);border:1px solid var(--line);border-radius:12px;padding:20px;text-align:center}
+  .region-card h3{color:var(--navy);font-size:17px;margin-bottom:6px}
+  .region-card p{color:var(--gray);font-size:13.5px}
+  .region-note{text-align:center;color:var(--gray);font-size:14px;margin-top:22px}
+
+  .faq-list{max-width:760px;margin:0 auto}
+  details{border:1px solid var(--line);border-radius:12px;margin-bottom:12px;background:var(--white)}
+  summary{cursor:pointer;font-weight:700;color:var(--navy);padding:18px 20px;font-size:16.5px;list-style:none;position:relative;padding-right:44px}
+  summary::after{content:"+";position:absolute;right:20px;top:14px;font-size:22px;color:var(--blue)}
+  details[open] summary::after{content:"−"}
+  details .a{padding:0 20px 18px;color:var(--gray);font-size:15px}
+
+  .quote{background:var(--navy);color:#fff;text-align:center}
+  .quote h2{color:#fff}
+  .quote .sub{color:rgba(255,255,255,.75)}
+  .quote .phone{font-size:clamp(26px,5vw,40px);font-weight:800;color:#7fb4ff;margin:6px 0 26px;display:block}
+
+  footer{background:#0b1b30;color:#8fa3b8;font-size:13.5px;padding:34px 0;line-height:1.9}
+  footer strong{color:#c9d6e2}
+
+  .mobile-bar{display:none;position:fixed;bottom:0;left:0;right:0;z-index:60}
+  .mobile-bar a{flex:1;text-align:center;padding:15px 0;font-weight:800;font-size:16px;color:#fff}
+  .mobile-bar .m-call{background:var(--blue)}
+  .mobile-bar .m-talk{background:var(--accent)}
+  @media(max-width:640px){
+    .mobile-bar{display:flex}
+    body{padding-bottom:52px}
+    section{padding:52px 0}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <div class="logo">파워<span>클린져스</span></div>
+    <a class="call" href="tel:0507-1468-0941">📞 0507-1468-0941</a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="badge">부산 · 울산 · 대구 · 경남 · 경북 건물위생관리 전문업체</div>
+    <h1>건물외벽청소 · 유리창청소<br>사진만 보내면 <em>당일 무료 견적</em></h1>
+    <p>부산 · 울산 · 대구 · 경남 · 경북 특수구역 고압세척 — 고층 로프팀 직영 시공</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="https://talk.naver.com/profile/w2juy7m/form/2" target="_blank" rel="noopener">📷 사진 견적 신청</a>
+      <a class="btn btn-ghost" href="tel:0507-1468-0941">📞 전화 상담</a>
+    </div>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <h2>전문 시공 분야</h2>
+    <p class="sub">건물 바깥의 모든 오염 — 세 분야로 책임 시공합니다</p>
+    <div class="cards">
+      <div class="card">
+        <div class="icon">🏢</div>
+        <h3>건물외벽청소</h3>
+        <p class="desc">오염 진단부터 고압세척까지, 건물 외벽의 이끼·곰팡이·백태·녹물을 제거합니다.</p>
+        <ul>
+          <li>외벽 · 간판 · 어닝 · 판넬 · 옥상 청소</li>
+          <li>벽돌 · 석재 · 옹벽 오염 제거</li>
+          <li>고층 로프 외벽청소 — 사다리차 불가 건물 가능</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="icon">🪟</div>
+        <h3>유리창청소</h3>
+        <p class="desc">아파트·상가 외창의 물때와 자국까지, 유리 본연의 투명함을 되살립니다.</p>
+        <ul>
+          <li>아파트 외창 · 상가 유리 외벽 청소</li>
+          <li>베란다 외창 · 거실 외창 · 창틀 청소</li>
+          <li>고층 로프 유리창청소</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="icon">🧹</div>
+        <h3>종합청소 (특수구역 고압세척)</h3>
+        <p class="desc">장비 진입이 어려운 특수구역도 전문 장비로 고압세척합니다.</p>
+        <ul>
+          <li>주차장 · 공장 · 창고 · 지붕 · 렉산 청소</li>
+          <li>수영장 · 놀이터 · 데크 · 테라스 청소</li>
+          <li>태양광패널 · 캐노피 등 특수구역</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="process" id="process">
+  <div class="wrap">
+    <h2>사진 견적, 이렇게 진행됩니다</h2>
+    <p class="sub">방문 일정 없이 사진만으로 견적을 받아보세요</p>
+    <div class="steps">
+      <div class="step"><div class="num">1</div><h3>사진 전송</h3><p>오염 부위 사진을 톡톡 또는 문자로 보내주세요</p></div>
+      <div class="step"><div class="num">2</div><h3>당일 견적</h3><p>오염 상태 진단 후 당일 견적을 안내드립니다</p></div>
+      <div class="step"><div class="num">3</div><h3>일정 확정</h3><p>원하시는 날짜에 맞춰 시공 일정을 잡습니다</p></div>
+      <div class="step"><div class="num">4</div><h3>책임 시공</h3><p>직영팀 고압세척 시공 후 결과 사진을 보내드립니다</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="wrap">
+    <h2>파워클린져스를 선택하는 이유</h2>
+    <p class="sub">하청 없이 직영팀이 처음부터 끝까지</p>
+    <div class="cards">
+      <div class="card"><h3>🧗 고층 로프팀 직영</h3><ul><li>산업로프 전문 인력 보유</li><li>사다리차 진입 불가 건물도 시공</li></ul></div>
+      <div class="card"><h3>⚡ 당일 견적 상담</h3><ul><li>사진견적으로 빠른 안내</li><li>불필요한 방문 일정 없음</li></ul></div>
+      <div class="card"><h3>🔁 정기계약 할인</h3><ul><li>반복 오염 구역 정기 관리</li><li>정기계약 시 할인 상담</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section id="cases">
+  <div class="wrap">
+    <h2>시공 사례</h2>
+    <p class="sub">시공 전후 사진 — ※ 본인 촬영 사진 수급 후 교체 (사례 제목에 지역명 포함 예정)</p>
+    <div class="cases-grid">
+      <div class="case">시공사례 1<br>(예: 부산 상가 외벽 고압세척 전/후)</div>
+      <div class="case">시공사례 2<br>(예: 울산 아파트 외창청소 전/후)</div>
+      <div class="case">시공사례 3<br>(예: 대구 로프 외벽 작업 현장)</div>
+    </div>
+  </div>
+</section>
+
+<section class="region" id="region">
+  <div class="wrap">
+    <h2>서비스 지역</h2>
+    <p class="sub">경상권 전 지역의 외벽·유리·특수구역 청소를 담당합니다</p>
+    <div class="region-grid">
+      <div class="region-card"><h3>부산</h3><p>해운대 · 서면 · 사상 등 부산 전 지역 외벽청소·유리창청소</p></div>
+      <div class="region-card"><h3>울산</h3><p>남구 · 북구 · 동구 등 울산 전 지역 건물외벽·공장 청소</p></div>
+      <div class="region-card"><h3>대구</h3><p>수성구 · 달서구 등 대구 전 지역 외벽·유리 청소</p></div>
+      <div class="region-card"><h3>경남</h3><p>창원 · 김해 · 양산 · 진주 · 거제 등 경상남도 전역</p></div>
+      <div class="region-card"><h3>경북</h3><p>포항 · 구미 · 경주 · 경산 등 경상북도 전역</p></div>
+    </div>
+    <p class="region-note">사진 견적은 지역과 무관하게 당일 안내됩니다.</p>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <h2>자주 묻는 질문</h2>
+    <p class="sub">외벽청소·유리창청소, 궁금한 점을 확인하세요</p>
+    <div class="faq-list">
+      <details>
+        <summary>외벽청소 비용은 어떻게 정해지나요?</summary>
+        <div class="a">건물 규모, 오염 정도, 작업 난이도(로프 작업 여부)에 따라 달라집니다. 오염 부위 사진을 보내주시면 당일 무료 견적으로 정확한 비용을 안내드립니다.</div>
+      </details>
+      <details>
+        <summary>방문 견적 없이 사진만으로 견적이 가능한가요?</summary>
+        <div class="a">네. 사진으로 오염 상태와 건물 구조를 진단해 당일 견적을 드립니다. 별도 방문 일정을 잡을 필요가 없어 빠릅니다.</div>
+      </details>
+      <details>
+        <summary>사다리차가 들어갈 수 없는 건물도 가능한가요?</summary>
+        <div class="a">가능합니다. 고층 로프팀을 직영으로 운영하고 있어 사다리차 진입이 불가능한 건물의 외벽청소·유리창청소도 시공합니다.</div>
+      </details>
+      <details>
+        <summary>아파트 외창청소도 하나요?</summary>
+        <div class="a">네. 아파트 외창, 베란다 외창, 거실 외창의 물때와 자국 제거까지 유리창청소 전문팀이 시공합니다.</div>
+      </details>
+      <details>
+        <summary>정기적으로 관리받을 수 있나요?</summary>
+        <div class="a">반복 오염이 생기는 구역(주차장·간판·유리 외벽 등)은 정기계약으로 관리해 드리며, 정기계약 시 할인 상담이 가능합니다.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="quote" id="quote">
+  <div class="wrap">
+    <h2>지금 사진 보내고 견적 받아보세요</h2>
+    <p class="sub">당일 견적 상담 · 상담은 무료입니다</p>
+    <a class="phone" href="tel:0507-1468-0941">0507-1468-0941</a>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="https://talk.naver.com/profile/w2juy7m/form/2" target="_blank" rel="noopener">📷 사진 견적 신청</a>
+      <a class="btn btn-ghost" href="https://talk.naver.com/w2juy7m" target="_blank" rel="noopener">💬 네이버 톡톡 문의</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <strong>파워클린져스</strong> — 건물위생관리업체 · 건물외벽청소 · 유리창청소 · 특수구역 고압세척<br>
+    서비스 지역: 부산 · 울산 · 대구 · 경상남도 · 경상북도<br>
+    대표: [대표자명] · 사업자등록번호: [000-00-00000] · 주소: [사업장 주소]<br>
+    전화: 0507-1468-0941 · 네이버 톡톡: talk.naver.com/w2juy7m<br>
+    © 2026 Powercleangers. All rights reserved.
+  </div>
+</footer>
+
+<div class="mobile-bar">
+  <a class="m-call" href="tel:0507-1468-0941">📞 전화 상담</a>
+  <a class="m-talk" href="https://talk.naver.com/profile/w2juy7m/form/2" target="_blank" rel="noopener">📷 사진 견적</a>
+</div>
+
+</body>
+</html>
