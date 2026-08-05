@@ -1,2 +1,0 @@
-deploy-probe-20260805-0621-KTX7Q9
-temporary file to verify GitHub to Cloudflare Pages auto deployment. safe to delete.
