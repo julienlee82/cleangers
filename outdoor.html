@@ -95,7 +95,12 @@
 <style>
 @media (max-width:1023.98px){.dc-desk{display:none !important}}
 @media (min-width:1024px){.dc-mob{display:none !important}}
-.dc-overlay{display:none}.dc-overlay.open{display:block}
+.dc-overlay{position:fixed;inset:0;z-index:60;pointer-events:none;visibility:hidden;}
+.dc-overlay>div{transform:translateY(-103%);transition:transform 0.55s cubic-bezier(.22,.61,.36,1);}
+.dc-overlay.open{pointer-events:auto;visibility:visible;}
+.dc-overlay.opening{visibility:visible;}
+.dc-overlay.open>div{transform:translateY(0);}
+@media (max-width:1023.98px){.dc-overlay a[data-dc-close]{font-size:21px !important;font-weight:600 !important;line-height:1.35 !important;letter-spacing:-0.01em !important;min-height:44px !important;}}
 .dch1:hover{text-decoration: none !important}
 .dch2:hover{transform: scale(1.03) !important; background: #131313 !important; text-decoration: none !important}
 .dch3:hover{transform: scale(1.03) !important; background: #131313 !important}
@@ -173,10 +178,10 @@
 <body>
 <div style="position: relative; width: 100%; background: #FFFFFF; color: #131313; font-family: 'Noto Sans KR', system-ui, sans-serif; font-size: clamp(15px, calc(15px + (100cqi - 959px) * 100), 18px); font-weight: 400; line-height: clamp(26px, calc(26px + (100cqi - 959px) * 100), 31px); letter-spacing: -0.01em;">
 
- <header data-screen-label="헤더" id="dc-header" style="position: fixed; top: 0; left: 0; right: 0; z-index: 30; transition: transform 0.25s ease;">
+ <header data-screen-label="헤더" id="dc-header" style="position: fixed; top: 0; left: 0; right: 0; z-index: 80; transition: transform 0.25s ease;">
  <div style="max-width: 1200px; margin: 0 auto; padding: 24px clamp(20px, calc(20px + (100cqi - 767px) * 100), 24px); display: flex; align-items: center; justify-content: space-between; gap: 24px;">
  <a href="/" style="display: inline-flex; align-items: center; min-height: 48px; text-decoration: none;" class="dch1">
- <img src="images/logo-head.png" alt="파워클린져스 로고" style="background: rgba(0, 0, 0, 0.82); border-radius: 50%; padding: 7px; box-shadow: 0 2px 10px rgba(0,0,0,0.25); height: clamp(48px, 5vw, 64px); width: auto; object-fit: contain; object-position: left center; display: block;">
+ <img src="images/logo-head2.png" alt="파워클린져스 로고" style="filter: drop-shadow(0 1px 4px rgba(0,0,0,0.18)); height: clamp(48px, 5vw, 64px); width: auto; object-fit: contain; object-position: left center; display: block;">
  </a>
  <div class="dc-desk" style="display:contents">
  <div style="display: flex; align-items: center; gap: 10px;">
@@ -191,6 +196,7 @@
  </button>
  </div>
  </div>
+ <div class="dc-mob" style="display:contents"><a href="sms:01028310935" style="min-height: 42px; padding: 0 18px; display: inline-flex; align-items: center; justify-content: center; white-space: nowrap; border-radius: 60px; background: #000000; color: #FFFFFF; font-size: 14px; font-weight: 600; letter-spacing: -0.01em; text-decoration: none;">현장사진 문자접수</a></div>
  </div>
  </header>
 
@@ -579,22 +585,12 @@
  </div>
 
  <div class="dc-mob" style="display:contents">
- <div style="position: fixed; left: 0; right: 0; bottom: -1px; z-index: 50; background: #000000; padding: 10px 12px calc(11px + env(safe-area-inset-bottom)); display: flex; align-items: stretch; gap: 8px;">
- <button type="button" data-dc-open aria-label="둘러보기 열기" style="flex: 1 1 0; min-width: 0; min-height: 56px; padding: 0 10px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; white-space: nowrap; border: 1.5px solid #FFFFFF; border-radius: 60px; background: #000000; color: #FFFFFF; font-family: inherit; font-size: 14px; font-weight: 500; line-height: 1.4; letter-spacing: -0.01em; box-shadow: none; cursor: pointer;">
- <span style="display: flex; flex-direction: column; gap: 3px;">
- <span style="display: block; width: 14px; height: 2px; background: #FFFFFF;"></span>
- <span style="display: block; width: 14px; height: 2px; background: #FFFFFF;"></span>
- <span style="display: block; width: 14px; height: 2px; background: #FFFFFF;"></span>
- </span>
- 둘러보기
- </button>
- <a href="https://pf.kakao.com/_PSxfan/chat" target="_blank" rel="noopener" style="flex: 1 1 0; min-width: 0; min-height: 56px; padding: 0 10px; white-space: nowrap; display: inline-flex; align-items: center; justify-content: center; border-radius: 60px; background: #1CA2F3; color: #FFFFFF; font-size: 14px; font-weight: 500; line-height: 1.4; letter-spacing: -0.01em; text-decoration: none; box-shadow: none;" class="dch59">카카오톡</a>
- <a href="sms:01028310935" style="flex: 1 1 0; min-width: 0; min-height: 56px; padding: 0 10px; white-space: nowrap; display: inline-flex; align-items: center; justify-content: center; border: 1.5px solid #FFFFFF; border-radius: 60px; background: #000000; color: #FFFFFF; font-size: 14px; font-weight: 500; line-height: 1.4; letter-spacing: -0.01em; text-decoration: none; box-shadow: none;" class="dch60">문자접수</a>
- </div>
- </div>
+ <a href="https://pf.kakao.com/_PSxfan/chat" target="_blank" rel="noopener" aria-label="카카오톡 상담" style="position: fixed; left: 16px; bottom: calc(16px + env(safe-area-inset-bottom)); z-index: 70; display: block; width: 64px; height: 64px; border-radius: 50%; box-shadow: 0 4px 16px rgba(0,0,0,0.35);"><img src="images/kakao-bubble.png" alt="카카오톡 상담" style="width: 100%; height: 100%; display: block;"></a>
+ <button type="button" data-dc-toggle aria-label="둘러보기" style="position: fixed; left: 50%; transform: translateX(-50%); bottom: calc(20px + env(safe-area-inset-bottom)); z-index: 70; height: 52px; padding: 0 26px; display: inline-flex; align-items: center; gap: 9px; border: none; border-radius: 60px; background: #000000; color: #FFFFFF; font-family: inherit; font-size: 15px; font-weight: 700; letter-spacing: 0; cursor: pointer; box-shadow: 0 4px 16px rgba(0,0,0,0.35);"><span style="display:flex;flex-direction:column;gap:5px;"><span style="display:block;width:16px;height:2px;background:#FFF;"></span><span style="display:block;width:16px;height:2px;background:#FFF;"></span><span style="display:block;width:16px;height:2px;background:#FFF;"></span></span>둘러보기</button>
+</div>
 
  <div id="dc-overlay" class="dc-overlay">
-    <div style="position: fixed; inset: 0; z-index: 60; background: #000000; overflow-y: auto;">
+    <div style="position: fixed; inset: 0; z-index: 60; background: rgba(8, 10, 14, 0.86); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); overflow-y: auto;">
       <button type="button" data-dc-close aria-label="닫기" style="position: absolute; top: 20px; right: 20px; width: 44px; height: 44px; display: inline-flex; align-items: center; justify-content: center; border: none; background: transparent; color: #FFFFFF; font-family: inherit; font-size: 24px; font-weight: 400; line-height: 1; cursor: pointer;">×</button>
       <div style="min-height: 100%; display: flex; align-items: center; justify-content: center; padding: 96px 20px calc(56px + env(safe-area-inset-bottom));">
         <div style="width: 100%; max-width: 720px; display: flex; flex-direction: column; align-items: center; text-align: center;">
@@ -605,10 +601,7 @@
           <a href="/outdoor" data-dc-close style="min-height: 48px; display: flex; align-items: center; font-size: clamp(30px, calc(30px + (100cqi - 959px) * 100), 40px); font-weight: 900; line-height: 1.25; letter-spacing: -0.02em; color: #FFFFFF; text-decoration: none;" class="dch64">고압세척</a>
           <a href="/cases" data-dc-close style="min-height: 48px; display: flex; align-items: center; font-size: clamp(30px, calc(30px + (100cqi - 959px) * 100), 40px); font-weight: 900; line-height: 1.25; letter-spacing: -0.02em; color: #FFFFFF; text-decoration: none;" class="dch65">청소후기</a>
         </div>
-        <div style="margin-top: 40px; display: flex; flex-direction: column; align-items: center; gap: 16px; padding: 0;">
-          <a href="https://pf.kakao.com/_PSxfan/chat" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; justify-content: center; border-radius: 60px; padding: 16px 32px; font-size: clamp(15px, calc(15px + (100cqi - 959px) * 100), 18px); font-weight: 500; line-height: 1.5; letter-spacing: -0.01em; white-space: nowrap; background: #1CA2F3; color: #FFFFFF; text-decoration: none; box-shadow: none; transition: transform 0.25s ease, background 0.25s ease;" class="dch66">카카오톡 견적문의</a>
-          <a href="sms:01028310935" style="display: inline-flex; align-items: center; justify-content: center; border: 1.5px solid #FFFFFF; border-radius: 60px; padding: 14.5px 30.5px; font-size: clamp(15px, calc(15px + (100cqi - 959px) * 100), 18px); font-weight: 500; line-height: 1.5; letter-spacing: -0.01em; white-space: nowrap; background: transparent; color: #FFFFFF; text-decoration: none; box-shadow: none; transition: transform 0.25s ease;" class="dch67">현장사진 문자접수</a>
-        </div>
+        
         </div>
       </div>
     </div>
@@ -621,10 +614,14 @@
   if(hdr){ hdr.style.transform='translateY(0)'; }  // 260819: 헤더 상시 고정(자동 숨김 제거)
 
   var ov=document.getElementById('dc-overlay');
-  function openMenu(){ if(ov){ ov.classList.add('open'); document.documentElement.style.overflow='hidden'; } }
-  function closeMenu(){ if(ov){ ov.classList.remove('open'); document.documentElement.style.overflow=''; } }
+  var hideT=null;
+  function openMenu(){ if(!ov) return; clearTimeout(hideT); ov.classList.add('open'); }
+  function closeMenu(){ if(!ov) return; ov.classList.remove('open'); ov.classList.add('opening');
+    clearTimeout(hideT); hideT=setTimeout(function(){ ov.classList.remove('opening'); }, 600); }
+  function toggleMenu(){ if(!ov) return; ov.classList.contains('open') ? closeMenu() : openMenu(); }
   Array.prototype.forEach.call(document.querySelectorAll('[data-dc-open]'), function(b){ b.addEventListener('click', openMenu); });
   Array.prototype.forEach.call(document.querySelectorAll('[data-dc-close]'), function(b){ b.addEventListener('click', closeMenu); });
+  Array.prototype.forEach.call(document.querySelectorAll('[data-dc-toggle]'), function(b){ b.addEventListener('click', toggleMenu); });
 
   try{
     if('IntersectionObserver' in window){

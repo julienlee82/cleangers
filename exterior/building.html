@@ -283,7 +283,12 @@
 <style>
 @media (max-width:1023.98px){.dc-desk{display:none !important}}
 @media (min-width:1024px){.dc-mob{display:none !important}}
-.dc-overlay{display:none}.dc-overlay.open{display:block}
+.dc-overlay{position:fixed;inset:0;z-index:60;pointer-events:none;visibility:hidden;}
+.dc-overlay>div{transform:translateY(-103%);transition:transform 0.55s cubic-bezier(.22,.61,.36,1);}
+.dc-overlay.open{pointer-events:auto;visibility:visible;}
+.dc-overlay.opening{visibility:visible;}
+.dc-overlay.open>div{transform:translateY(0);}
+@media (max-width:1023.98px){.dc-overlay a[data-dc-close]{font-size:21px !important;font-weight:600 !important;line-height:1.35 !important;letter-spacing:-0.01em !important;min-height:44px !important;}}
 .dch1:hover{text-decoration: none !important}
 .dch2:hover{transform: scale(1.03) !important; background: #131313 !important; text-decoration: none !important}
 .dch3:hover{transform: scale(1.03) !important; background: #131313 !important}
@@ -343,10 +348,10 @@
 <body>
 <div style="position: relative; width: 100%; background: #FFFFFF; color: #131313; font-family: 'Noto Sans KR', system-ui, sans-serif; font-size: clamp(15px, calc(15px + (100cqi - 959px) * 100), 18px); font-weight: 400; line-height: clamp(26px, calc(26px + (100cqi - 959px) * 100), 31px); letter-spacing: -0.01em;">
 
- <header data-screen-label="헤더" id="dc-header" style="position: fixed; top: 0; left: 0; right: 0; z-index: 30; transition: transform 0.25s ease;">
+ <header data-screen-label="헤더" id="dc-header" style="position: fixed; top: 0; left: 0; right: 0; z-index: 80; transition: transform 0.25s ease;">
  <div style="max-width: 1200px; margin: 0 auto; padding: 24px clamp(20px, calc(20px + (100cqi - 767px) * 100), 24px); display: flex; align-items: center; justify-content: space-between; gap: 24px;">
  <a href="/" style="display: inline-flex; align-items: center; min-height: 48px; text-decoration: none;" class="dch1">
- <img src="/images/logo-head.png" alt="파워클린져스 로고" style="background: rgba(0, 0, 0, 0.82); border-radius: 50%; padding: 7px; box-shadow: 0 2px 10px rgba(0,0,0,0.25); height: clamp(48px, 5vw, 64px); width: auto; object-fit: contain; object-position: left center; display: block;">
+ <img src="/images/logo-head2.png" alt="파워클린져스 로고" style="filter: drop-shadow(0 1px 4px rgba(0,0,0,0.18)); height: clamp(48px, 5vw, 64px); width: auto; object-fit: contain; object-position: left center; display: block;">
  </a>
  <div class="dc-desk" style="display:contents">
  <div style="display: flex; align-items: center; gap: 10px;">
@@ -361,6 +366,7 @@
  </button>
  </div>
  </div>
+ <div class="dc-mob" style="display:contents"><a href="sms:01028310935" style="min-height: 42px; padding: 0 18px; display: inline-flex; align-items: center; justify-content: center; white-space: nowrap; border-radius: 60px; background: #000000; color: #FFFFFF; font-size: 14px; font-weight: 600; letter-spacing: -0.01em; text-decoration: none;">현장사진 문자접수</a></div>
  </div>
  </header>
 <main><article>
@@ -406,20 +412,19 @@
 <h2 style="margin:64px 0 16px;font-size:clamp(24px,3vw,32px);font-weight:800;line-height:1.25;letter-spacing:-0.02em;color:#000;">재질별로 수압을 어떻게 다르게 쓰나요?</h2>
 <p style="margin:0 0 18px;font-size:17px;font-weight:400;line-height:1.75;letter-spacing:-0.01em;color:#131313;">같은 외벽고압세척이라도 벽이 무엇으로 마감돼 있느냐에 따라 쓰는 압력이 다릅니다. 화강석과 타일은 비교적 높은 압력을 견디지만, 드라이비트는 표면이 무르기 때문에 강하게 밀면 마감층이 뜯깁니다. 도장면은 압력보다 <strong>약품 선택과 접촉 시간</strong>으로 승부를 봅니다. 노출콘크리트는 얼룩이 남기 쉬워 구간을 나누지 않고 한 면을 한 번에 끝내야 경계 자국이 생기지 않습니다.</p>
 <p style="margin:0 0 18px;font-size:17px;font-weight:400;line-height:1.75;letter-spacing:-0.01em;color:#131313;">이 판단을 현장에서 즉석으로 하지 않기 위해, 저희는 견적 단계에서 재질을 먼저 확정하고 필요한 약품과 노즐을 준비해서 갑니다.</p>
-<figure style="margin:32px 0;"><img src="/images/reviews/exterior-building-x01.webp" alt="건물외벽청소 추가 현장 기록" loading="lazy" style="width:100%;height:auto;display:block;border-radius:12px;"></figure>
+<figure style="margin:32px 0;"><img src="/images/reviews/exterior-building-xb01.webp" alt="건물외벽청소 추가 현장 기록" loading="lazy" style="width:100%;height:auto;display:block;border-radius:12px;"></figure>
 <h2 style="margin:64px 0 16px;font-size:clamp(24px,3vw,32px);font-weight:800;line-height:1.25;letter-spacing:-0.02em;color:#000;">창문과 유리는 같이 해야 할까요?</h2>
 <p style="margin:0 0 18px;font-size:17px;font-weight:400;line-height:1.75;letter-spacing:-0.01em;color:#131313;">거의 항상 함께 하시는 편이 유리합니다. 외벽을 세척하면 오염된 물이 아래 유리로 흘러내리기 때문에, 유리를 먼저 닦아두면 다시 더러워집니다. <strong>장비를 한 번 세팅한 김에 외벽과 외창을 같이 처리하는 편이 비용 면에서도 낫습니다.</strong></p>
 <p style="margin:0 0 18px;font-size:17px;font-weight:400;line-height:1.75;letter-spacing:-0.01em;color:#131313;">창 주변은 특히 손이 많이 갑니다. 창틀 하부와 실리콘 이음새에는 오염이 진하게 눌러붙어 있는데, 여기에 고압수를 그대로 쏘면 실리콘이 들뜨거나 창틀 안으로 물이 들어갑니다. 압력을 낮추고 브러시로 풀어준 뒤 헹구는 방식으로 처리합니다.</p>
-<figure style="margin:32px 0;"><img src="/images/reviews/exterior-building-x02.webp" alt="건물외벽청소 추가 현장 기록" loading="lazy" style="width:100%;height:auto;display:block;border-radius:12px;"></figure>
+<figure style="margin:32px 0;"><img src="/images/reviews/exterior-building-xb02.webp" alt="건물외벽청소 추가 현장 기록" loading="lazy" style="width:100%;height:auto;display:block;border-radius:12px;"></figure>
 <h2 style="margin:64px 0 16px;font-size:clamp(24px,3vw,32px);font-weight:800;line-height:1.25;letter-spacing:-0.02em;color:#000;">안전은 어떻게 관리하나요?</h2>
 <p style="margin:0 0 18px;font-size:17px;font-weight:400;line-height:1.75;letter-spacing:-0.01em;color:#131313;">고소 구간은 <strong>예외 없이 2인 1조</strong>로 움직입니다. 안전모, 안전대, 안전화를 기본 착용하고 바스켓 탑승 시에는 안전벨트를 구조물에 체결합니다. 아래에는 통행 차단 구역을 설정하고, 보행량이 많은 상가 건물은 시간대를 조정해 진행합니다.</p>
-<figure style="margin:32px 0;"><img src="/images/reviews/exterior-building-x05.webp" alt="건물외벽청소 추가 현장 기록" loading="lazy" style="width:100%;height:auto;display:block;border-radius:12px;"></figure>
 <p style="margin:0 0 18px;font-size:17px;font-weight:400;line-height:1.75;letter-spacing:-0.01em;color:#131313;">풍속 기준을 넘으면 작업을 중단합니다. 옥상 난간부와 파라펫 상단은 발 딛는 자리가 좁아 특히 조심하는 구간인데, 이런 곳일수록 오염이 가장 많이 쌓여 있어 건너뛸 수도 없습니다.</p>
-<figure style="margin:32px 0;"><img src="/images/reviews/exterior-building-x03.webp" alt="건물외벽청소 추가 현장 기록" loading="lazy" style="width:100%;height:auto;display:block;border-radius:12px;"></figure>
+<figure style="margin:32px 0;"><img src="/images/reviews/exterior-building-xb03.webp" alt="건물외벽청소 추가 현장 기록" loading="lazy" style="width:100%;height:auto;display:block;border-radius:12px;"></figure>
 <h2 style="margin:64px 0 16px;font-size:clamp(24px,3vw,32px);font-weight:800;line-height:1.25;letter-spacing:-0.02em;color:#000;">직접 하면 안 되는 이유</h2>
 <p style="margin:0 0 18px;font-size:17px;font-weight:400;line-height:1.75;letter-spacing:-0.01em;color:#131313;">고압세척기를 빌리면 될 것 같지만, 외벽 작업에서 사고가 나는 지점은 장비가 아니라 <strong>높이와 재질 판단</strong>입니다. 사다리를 딛고 무리하게 팔을 뻗다가 중심을 잃는 사고가 가장 흔하고, 재질을 모르고 압력을 올렸다가 드라이비트 마감층을 벗겨 도장을 다시 해야 하는 경우도 자주 봅니다. 아래층 유리와 주차 차량에 오염수를 튀겨 배상 문제로 번지는 일도 있습니다.</p>
 <p style="margin:0 0 18px;font-size:17px;font-weight:400;line-height:1.75;letter-spacing:-0.01em;color:#131313;">하청을 몇 단계 거치느냐가 결과를 가릅니다. 건물외벽청소업체가 직영으로 들어오는 곳인지부터 확인해 보세요. 저희는 하청 없이 직영팀이 작업합니다. 견적을 낸 사람과 현장에 오는 사람이 같기 때문에, 사진으로 판단한 내용과 실제 작업이 어긋나지 않습니다.</p>
-<figure style="margin:32px 0;"><img src="/images/reviews/exterior-building-x04.webp" alt="건물외벽청소 추가 현장 기록" loading="lazy" style="width:100%;height:auto;display:block;border-radius:12px;"></figure>
+<figure style="margin:32px 0;"><img src="/images/reviews/exterior-building-xb04.webp" alt="건물외벽청소 추가 현장 기록" loading="lazy" style="width:100%;height:auto;display:block;border-radius:12px;"></figure>
 <h2 style="margin:64px 0 16px;font-size:clamp(24px,3vw,32px);font-weight:800;line-height:1.25;letter-spacing:-0.02em;color:#000;">비용은 어떻게 되나요?</h2>
 <p style="margin:0 0 18px;font-size:17px;font-weight:400;line-height:1.75;letter-spacing:-0.01em;color:#131313;">건물외벽청소는 <strong>35만원부터</strong>입니다. 건물외벽청소비용을 가르는 것은 층수와 전면 폭, 접근 방식, 오염 종류와 두께입니다. 새똥과 녹물처럼 전용 약품이 필요한 오염이 섞여 있으면 처리 시간이 따로 붙고, 반대로 외벽과 유리를 함께 맡기시면 장비를 한 번만 세팅해 그만큼 유리합니다. 영업 중인 건물이라 야간이나 주말에 진행해야 한다면 미리 알려주세요. <strong>부가세는 별도입니다.</strong></p>
 <h2 style="margin:64px 0 16px;font-size:clamp(24px,3vw,32px);font-weight:800;line-height:1.25;letter-spacing:-0.02em;color:#000;">자주 묻는 질문</h2>
@@ -532,22 +537,12 @@
  </div>
 
  <div class="dc-mob" style="display:contents">
- <div style="position: fixed; left: 0; right: 0; bottom: -1px; z-index: 50; background: #000000; padding: 10px 12px calc(11px + env(safe-area-inset-bottom)); display: flex; align-items: stretch; gap: 8px;">
- <button type="button" data-dc-open aria-label="둘러보기 열기" style="flex: 1 1 0; min-width: 0; min-height: 56px; padding: 0 10px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; white-space: nowrap; border: 1.5px solid #FFFFFF; border-radius: 60px; background: #000000; color: #FFFFFF; font-family: inherit; font-size: 14px; font-weight: 500; line-height: 1.4; letter-spacing: -0.01em; box-shadow: none; cursor: pointer;">
- <span style="display: flex; flex-direction: column; gap: 3px;">
- <span style="display: block; width: 14px; height: 2px; background: #FFFFFF;"></span>
- <span style="display: block; width: 14px; height: 2px; background: #FFFFFF;"></span>
- <span style="display: block; width: 14px; height: 2px; background: #FFFFFF;"></span>
- </span>
- 둘러보기
- </button>
- <a href="https://pf.kakao.com/_PSxfan/chat" target="_blank" rel="noopener" style="flex: 1 1 0; min-width: 0; min-height: 56px; padding: 0 10px; white-space: nowrap; display: inline-flex; align-items: center; justify-content: center; border-radius: 60px; background: #1CA2F3; color: #FFFFFF; font-size: 14px; font-weight: 500; line-height: 1.4; letter-spacing: -0.01em; text-decoration: none; box-shadow: none;" class="dch41">카카오톡</a>
- <a href="sms:01028310935" style="flex: 1 1 0; min-width: 0; min-height: 56px; padding: 0 10px; white-space: nowrap; display: inline-flex; align-items: center; justify-content: center; border: 1.5px solid #FFFFFF; border-radius: 60px; background: #000000; color: #FFFFFF; font-size: 14px; font-weight: 500; line-height: 1.4; letter-spacing: -0.01em; text-decoration: none; box-shadow: none;" class="dch42">문자접수</a>
- </div>
- </div>
+ <a href="https://pf.kakao.com/_PSxfan/chat" target="_blank" rel="noopener" aria-label="카카오톡 상담" style="position: fixed; left: 16px; bottom: calc(16px + env(safe-area-inset-bottom)); z-index: 70; display: block; width: 64px; height: 64px; border-radius: 50%; box-shadow: 0 4px 16px rgba(0,0,0,0.35);"><img src="/images/kakao-bubble.png" alt="카카오톡 상담" style="width: 100%; height: 100%; display: block;"></a>
+ <button type="button" data-dc-toggle aria-label="둘러보기" style="position: fixed; left: 50%; transform: translateX(-50%); bottom: calc(20px + env(safe-area-inset-bottom)); z-index: 70; height: 52px; padding: 0 26px; display: inline-flex; align-items: center; gap: 9px; border: none; border-radius: 60px; background: #000000; color: #FFFFFF; font-family: inherit; font-size: 15px; font-weight: 700; letter-spacing: 0; cursor: pointer; box-shadow: 0 4px 16px rgba(0,0,0,0.35);"><span style="display:flex;flex-direction:column;gap:5px;"><span style="display:block;width:16px;height:2px;background:#FFF;"></span><span style="display:block;width:16px;height:2px;background:#FFF;"></span><span style="display:block;width:16px;height:2px;background:#FFF;"></span></span>둘러보기</button>
+</div>
 
  <div id="dc-overlay" class="dc-overlay">
-    <div style="position: fixed; inset: 0; z-index: 60; background: #000000; overflow-y: auto;">
+    <div style="position: fixed; inset: 0; z-index: 60; background: rgba(8, 10, 14, 0.86); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); overflow-y: auto;">
       <button type="button" data-dc-close aria-label="닫기" style="position: absolute; top: 20px; right: 20px; width: 44px; height: 44px; display: inline-flex; align-items: center; justify-content: center; border: none; background: transparent; color: #FFFFFF; font-family: inherit; font-size: 24px; font-weight: 400; line-height: 1; cursor: pointer;">×</button>
       <div style="min-height: 100%; display: flex; align-items: center; justify-content: center; padding: 96px 20px calc(56px + env(safe-area-inset-bottom));">
         <div style="width: 100%; max-width: 720px; display: flex; flex-direction: column; align-items: center; text-align: center;">
@@ -558,10 +553,7 @@
           <a href="/outdoor" data-dc-close style="min-height: 48px; display: flex; align-items: center; font-size: clamp(30px, calc(30px + (100cqi - 959px) * 100), 40px); font-weight: 900; line-height: 1.25; letter-spacing: -0.02em; color: #FFFFFF; text-decoration: none;" class="dch46">고압세척</a>
           <a href="/cases" data-dc-close style="min-height: 48px; display: flex; align-items: center; font-size: clamp(30px, calc(30px + (100cqi - 959px) * 100), 40px); font-weight: 900; line-height: 1.25; letter-spacing: -0.02em; color: #FFFFFF; text-decoration: none;" class="dch47">청소후기</a>
         </div>
-        <div style="margin-top: 40px; display: flex; flex-direction: column; align-items: center; gap: 16px; padding: 0;">
-          <a href="https://pf.kakao.com/_PSxfan/chat" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; justify-content: center; border-radius: 60px; padding: 16px 32px; font-size: clamp(15px, calc(15px + (100cqi - 959px) * 100), 18px); font-weight: 500; line-height: 1.5; letter-spacing: -0.01em; white-space: nowrap; background: #1CA2F3; color: #FFFFFF; text-decoration: none; box-shadow: none; transition: transform 0.25s ease, background 0.25s ease;" class="dch48">카카오톡 견적문의</a>
-          <a href="sms:01028310935" style="display: inline-flex; align-items: center; justify-content: center; border: 1.5px solid #FFFFFF; border-radius: 60px; padding: 14.5px 30.5px; font-size: clamp(15px, calc(15px + (100cqi - 959px) * 100), 18px); font-weight: 500; line-height: 1.5; letter-spacing: -0.01em; white-space: nowrap; background: transparent; color: #FFFFFF; text-decoration: none; box-shadow: none; transition: transform 0.25s ease;" class="dch49">현장사진 문자접수</a>
-        </div>
+        
         </div>
       </div>
     </div>
@@ -574,10 +566,14 @@
   if(hdr){ hdr.style.transform='translateY(0)'; }  // 260819: 헤더 상시 고정(자동 숨김 제거)
 
   var ov=document.getElementById('dc-overlay');
-  function openMenu(){ if(ov){ ov.classList.add('open'); document.documentElement.style.overflow='hidden'; } }
-  function closeMenu(){ if(ov){ ov.classList.remove('open'); document.documentElement.style.overflow=''; } }
+  var hideT=null;
+  function openMenu(){ if(!ov) return; clearTimeout(hideT); ov.classList.add('open'); }
+  function closeMenu(){ if(!ov) return; ov.classList.remove('open'); ov.classList.add('opening');
+    clearTimeout(hideT); hideT=setTimeout(function(){ ov.classList.remove('opening'); }, 600); }
+  function toggleMenu(){ if(!ov) return; ov.classList.contains('open') ? closeMenu() : openMenu(); }
   Array.prototype.forEach.call(document.querySelectorAll('[data-dc-open]'), function(b){ b.addEventListener('click', openMenu); });
   Array.prototype.forEach.call(document.querySelectorAll('[data-dc-close]'), function(b){ b.addEventListener('click', closeMenu); });
+  Array.prototype.forEach.call(document.querySelectorAll('[data-dc-toggle]'), function(b){ b.addEventListener('click', toggleMenu); });
 
   try{
     if('IntersectionObserver' in window){
