@@ -283,16 +283,18 @@
 <style>
 @media (max-width:1023.98px){.dc-desk{display:none !important}}
 @media (min-width:1024px){.dc-mob{display:none !important}}
-html,body{background:#000000;margin:0;}
+html,body{background:#000000;margin:0;font-family:'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Pretendard', system-ui, -apple-system, 'Segoe UI', sans-serif;}
+body,button,input,select,textarea{font-family:inherit;word-break:keep-all;}
+h1,h2,h3,h4{letter-spacing:-0.02em;}
 section[data-screen-label='12 사업자 정보'] a{color:inherit !important;text-decoration:none !important;}
-@media (max-width:1023.98px){#dc-header button[data-dc-toggle]{display:none !important}#dc-header a[href^='sms:']{height:42px !important;line-height:42px !important;padding:0 16px !important;font-size:13.5px !important;}#dc-header a[href^='sms:'] img{height:33px !important;width:33px !important;}#dc-header a[href^='sms:']{padding-left:5px !important;}}
+@media (max-width:1023.98px){#dc-header button[data-dc-toggle]{display:none !important}#dc-header a[href^='sms:']{height:42px !important;line-height:42px !important;padding:0 16px !important;font-size: 13px !important;}#dc-header a[href^='sms:'] img{height:33px !important;width:33px !important;}#dc-header a[href^='sms:']{padding-left:5px !important;}}
 .dc-overlay{position:fixed;inset:0;z-index:60;pointer-events:none;visibility:hidden;}
 .dc-overlay>div{transform:translateY(-103%);transition:transform 0.55s cubic-bezier(.22,.61,.36,1);}
 .dc-overlay.open{pointer-events:auto;visibility:visible;}
 .dc-overlay.opening{visibility:visible;}
 .dc-overlay.open>div{transform:translateY(0);}
-.dc-overlay a[data-dc-close]{font-size:23px !important;font-weight:600 !important;line-height:1.35 !important;letter-spacing:-0.01em !important;min-height:44px !important;}
-@media (max-width:1023.98px){.dc-overlay a[data-dc-close]{font-size:20px !important;}}
+.dc-overlay a[data-dc-close]{font-size: 22px !important;font-weight: 500 !important;line-height:1.35 !important;letter-spacing:-0.01em !important;min-height:44px !important;}
+@media (max-width:1023.98px){.dc-overlay a[data-dc-close]{font-size: 18px !important;}}
 .dcblintroexteriorc{background-image: linear-gradient(90deg, #000000 0%, rgba(0,0,0,0.72) 13%, rgba(0,0,0,0.26) 28%, rgba(0,0,0,0) 46%), url('images/intro-exterior-c.webp') !important;}
 @media (max-width:1023.98px){.dcblintroexteriorc{background-image: linear-gradient(180deg, #000000 0%, rgba(0,0,0,0.7) 8%, rgba(0,0,0,0.24) 19%, rgba(0,0,0,0) 34%), url('images/intro-exterior-c.webp') !important;}}
 .dch1:hover{text-decoration: none !important}
@@ -352,7 +354,7 @@ section[data-screen-label='12 사업자 정보'] a{color:inherit !important;text
 </style>
 </head>
 <body>
-<div style="position: relative; width: 100%; background: #FFFFFF; color: #131313; font-family: 'Noto Sans KR', system-ui, sans-serif; font-size: clamp(15px, calc(15px + (100cqi - 959px) * 100), 18px); font-weight: 400; line-height: clamp(26px, calc(26px + (100cqi - 959px) * 100), 31px); letter-spacing: -0.01em;">
+<div style="position: relative; width: 100%; background: #FFFFFF; color: #131313; font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Pretendard', system-ui, -apple-system, 'Segoe UI', sans-serif; font-size: clamp(15px, calc(15px + (100cqi - 959px) * 100), 18px); font-weight: 400; line-height: clamp(26px, calc(26px + (100cqi - 959px) * 100), 31px); letter-spacing: -0.01em;">
 
  <header data-screen-label="헤더" id="dc-header" style="position: fixed; top: 0; left: 0; right: 0; z-index: 80;">
  <div style="max-width: 1200px; margin: 0 auto; padding: 16px clamp(14px, 2.2vw, 28px); display: flex; align-items: center; justify-content: space-between; gap: 12px;">
@@ -360,8 +362,8 @@ section[data-screen-label='12 사업자 정보'] a{color:inherit !important;text
    <img src="/images/kakao-talk.png" alt="카카오톡 상담" style="height: clamp(84px, 10vw, 148px); width: auto; display: block; border-radius: 22%; filter: drop-shadow(0 4px 14px rgba(0,0,0,0.3));">
   </a>
   <div style="display: flex; align-items: center; gap: 10px;">
-   <a href="sms:01028310935" style="height: 48px; padding: 0 22px; display: inline-flex; align-items: center; justify-content: center; gap: 9px; white-space: nowrap; border: none; border-radius: 60px; background: #000000; color: #FFFFFF; font-family: inherit; font-size: 15px; font-weight: 600; line-height: 48px; letter-spacing: -0.01em; text-decoration: none; box-shadow: 0 2px 10px rgba(0,0,0,0.18); cursor: pointer; padding-left: 6px; gap: 8px;"><img src="/images/logo-btn.png" alt="" aria-hidden="true" style="height: 38px; width: 38px; object-fit: contain; display: block; flex: 0 0 auto;">사진견적 문자접수</a>
-   <button type="button" data-dc-toggle aria-label="둘러보기" style="height: 48px; padding: 0 22px; display: inline-flex; align-items: center; justify-content: center; gap: 9px; white-space: nowrap; border: none; border-radius: 60px; background: #000000; color: #FFFFFF; font-family: inherit; font-size: 15px; font-weight: 600; line-height: 48px; letter-spacing: -0.01em; text-decoration: none; box-shadow: 0 2px 10px rgba(0,0,0,0.18); cursor: pointer;"><span style="display:flex;flex-direction:column;gap:4px;"><span style="display:block;width:16px;height:2px;background:#FFF;"></span><span style="display:block;width:16px;height:2px;background:#FFF;"></span><span style="display:block;width:16px;height:2px;background:#FFF;"></span></span>둘러보기</button>
+   <a href="sms:01028310935" style="height: 48px; padding: 0 22px; display: inline-flex; align-items: center; justify-content: center; gap: 9px; white-space: nowrap; border: none; border-radius: 60px; background: #000000; color: #FFFFFF; font-family: inherit; font-size: 15px; font-weight: 500; line-height: 48px; letter-spacing: -0.01em; text-decoration: none; box-shadow: 0 2px 10px rgba(0,0,0,0.18); cursor: pointer; padding-left: 6px; gap: 8px;"><img src="/images/logo-btn.png" alt="" aria-hidden="true" style="height: 38px; width: 38px; object-fit: contain; display: block; flex: 0 0 auto;">사진견적 문자접수</a>
+   <button type="button" data-dc-toggle aria-label="둘러보기" style="height: 48px; padding: 0 22px; display: inline-flex; align-items: center; justify-content: center; gap: 9px; white-space: nowrap; border: none; border-radius: 60px; background: #000000; color: #FFFFFF; font-family: inherit; font-size: 15px; font-weight: 500; line-height: 48px; letter-spacing: -0.01em; text-decoration: none; box-shadow: 0 2px 10px rgba(0,0,0,0.18); cursor: pointer;"><span style="display:flex;flex-direction:column;gap:4px;"><span style="display:block;width:16px;height:2px;background:#FFF;"></span><span style="display:block;width:16px;height:2px;background:#FFF;"></span><span style="display:block;width:16px;height:2px;background:#FFF;"></span></span>둘러보기</button>
   </div>
  </div>
 </header>
@@ -376,69 +378,69 @@ section[data-screen-label='12 사업자 정보'] a{color:inherit !important;text
 <section style="background:#FFF;padding:56px 0 0;">
   <div style="max-width:760px;margin:0 auto;padding:0 clamp(20px,4vw,48px);">
 <figure style="margin:32px 0;"><img src="/images/review-22.webp" alt="놀이터청소, 아이가 만지는 곳인데 세제를 써도 되나요? — 헹굼을 기준으로 짠 순서" style="width:100%;height:auto;display:block;border-radius:12px;"></figure>
-<h2 style="margin:64px 0 16px;font-size:clamp(24px,3vw,32px);font-weight:800;line-height:1.25;letter-spacing:-0.02em;color:#000;">한눈에 보기</h2>
+<h2 style="margin:64px 0 16px;font-size:clamp(24px,3vw,32px);font-weight:700;line-height:1.25;letter-spacing:-0.02em;color:#000;">한눈에 보기</h2>
 <table style="width:100%;border-collapse:collapse;margin:24px 0;font-size:15px;line-height:1.7;"><tr><th style="border:1px solid #E4E8EE;background:#F6F6F6;padding:10px 14px;text-align:left;font-weight:700;color:#000;">항목</th><th style="border:1px solid #E4E8EE;background:#F6F6F6;padding:10px 14px;text-align:left;font-weight:700;color:#000;">내용</th></tr><tr><td style="border:1px solid #E4E8EE;padding:10px 14px;text-align:left;color:#131313;vertical-align:top;">작업 대상</td><td style="border:1px solid #E4E8EE;padding:10px 14px;text-align:left;color:#131313;vertical-align:top;">미끄럼틀 안팎, 터널, 복합놀이대, 계단과 난간, 손잡이, 그물과 기둥</td></tr><tr><td style="border:1px solid #E4E8EE;padding:10px 14px;text-align:left;color:#131313;vertical-align:top;">주요 오염</td><td style="border:1px solid #E4E8EE;padding:10px 14px;text-align:left;color:#131313;vertical-align:top;">검은때, 이끼, 흙 침착, 손때, 새 배설물, 거미줄</td></tr><tr><td style="border:1px solid #E4E8EE;padding:10px 14px;text-align:left;color:#131313;vertical-align:top;">기준</td><td style="border:1px solid #E4E8EE;padding:10px 14px;text-align:left;color:#131313;vertical-align:top;">「보기에 깨끗한가」가 아니라 <strong>「입에 닿아도 되는가」</strong></td></tr><tr><td style="border:1px solid #E4E8EE;padding:10px 14px;text-align:left;color:#131313;vertical-align:top;">세제</td><td style="border:1px solid #E4E8EE;padding:10px 14px;text-align:left;color:#131313;vertical-align:top;">필요한 구간에만, 헹굼은 두 번 이상</td></tr><tr><td style="border:1px solid #E4E8EE;padding:10px 14px;text-align:left;color:#131313;vertical-align:top;">마무리</td><td style="border:1px solid #E4E8EE;padding:10px 14px;text-align:left;color:#131313;vertical-align:top;">물기를 털어내고 마를 때까지 이용을 미뤄 주시도록 안내합니다</td></tr><tr><td style="border:1px solid #E4E8EE;padding:10px 14px;text-align:left;color:#131313;vertical-align:top;">부가세</td><td style="border:1px solid #E4E8EE;padding:10px 14px;text-align:left;color:#131313;vertical-align:top;">별도</td></tr></table>
-<figure style="margin:32px 0;"><img src="/images/reviews/outdoor-playground-02.webp" alt="놀이터 난간과 상부 구조를 작업자가 위로 손을 뻗어 세척하는 장면" loading="lazy" style="width:100%;height:auto;display:block;border-radius:12px;"><figcaption style="margin-top:10px;font-size:13px;font-weight:500;line-height:1.5;color:#5B6B7B;">손이 닿는 높이 — 여기가 가장 진합니다</figcaption></figure>
-<h2 style="margin:64px 0 16px;font-size:clamp(24px,3vw,32px);font-weight:800;line-height:1.25;letter-spacing:-0.02em;color:#000;">놀이터청소는 기준이 다릅니다</h2>
-<p style="margin:0 0 18px;font-size:17px;font-weight:400;line-height:1.75;letter-spacing:-0.01em;color:#131313;">야외시설 세척은 대체로 「보기에 깨끗하면 된다」로 끝납니다. 놀이터는 그 기준으로는 부족합니다. <strong>아이들이 손으로 만지고, 그 손을 입에 넣습니다.</strong></p>
-<p style="margin:0 0 18px;font-size:17px;font-weight:400;line-height:1.75;letter-spacing:-0.01em;color:#131313;">그래서 놀이기구세척에서는 세척보다 <strong>헹굼</strong>이 중심입니다. 세제를 쓸지 말지, 쓴다면 어디에 얼마나 쓸지를 먼저 정하고, 쓴 자리는 반드시 두 번 이상 흘려 씻습니다. 잘 지워지지만 헹구기 어려운 방법보다, 조금 더 걸리더라도 잔여물이 남지 않는 방법을 고릅니다.</p>
-<figure style="margin:32px 0;"><img src="/images/reviews/outdoor-playground-03.webp" alt="사다리에 올라선 작업자가 터널형 미끄럼틀 상부에 물을 분사하는 장면" loading="lazy" style="width:100%;height:auto;display:block;border-radius:12px;"><figcaption style="margin-top:10px;font-size:13px;font-weight:500;line-height:1.5;color:#5B6B7B;">터널 상부는 사다리를 세워 위에서 넣습니다</figcaption></figure>
-<h2 style="margin:64px 0 16px;font-size:clamp(24px,3vw,32px);font-weight:800;line-height:1.25;letter-spacing:-0.02em;color:#000;">어디를 만지는지 보고 순서를 짭니다</h2>
-<p style="margin:0 0 18px;font-size:17px;font-weight:400;line-height:1.75;letter-spacing:-0.01em;color:#131313;">놀이터청소를 한 덩어리로 보면 정작 중요한 곳을 놓칩니다. 아이가 실제로 손을 대는 자리는 정해져 있습니다.</p>
-<ul style="margin:0 0 18px;padding-left:22px;"><li style="margin:0 0 8px;font-size:17px;line-height:1.75;color:#131313;"><strong>손잡이와 난간</strong> — 오르내릴 때 반드시 잡습니다. 손때가 가장 진합니다.</li><li style="margin:0 0 8px;font-size:17px;line-height:1.75;color:#131313;"><strong>미끄럼틀 안쪽 면</strong> — 몸 전체가 닿고, 아래로 내려오며 문지릅니다.</li><li style="margin:0 0 8px;font-size:17px;line-height:1.75;color:#131313;"><strong>계단 디딤판과 옆 벽</strong> — 발과 손이 함께 닿습니다.</li><li style="margin:0 0 8px;font-size:17px;line-height:1.75;color:#131313;"><strong>터널 내부</strong> — 볕이 안 들어 이끼와 곰팡이가 자랍니다.</li></ul>
-<p style="margin:0 0 18px;font-size:17px;font-weight:400;line-height:1.75;letter-spacing:-0.01em;color:#131313;">이 네 곳이 먼저입니다. 기둥이나 지붕 바깥면은 그다음입니다. 시간이 부족한 날에는 이 순서대로 자르고, 남은 구간을 다음으로 미룹니다.</p>
-<figure style="margin:32px 0;"><img src="/images/reviews/outdoor-playground-04.webp" alt="놀이시설의 초록색 곡면 성형물 이음새 주변을 작업자가 물로 세척하는 장면" loading="lazy" style="width:100%;height:auto;display:block;border-radius:12px;"><figcaption style="margin-top:10px;font-size:13px;font-weight:500;line-height:1.5;color:#5B6B7B;">성형물이 겹쳐지는 홈에 때가 몰려 있습니다</figcaption></figure>
-<h2 style="margin:64px 0 16px;font-size:clamp(24px,3vw,32px);font-weight:800;line-height:1.25;letter-spacing:-0.02em;color:#000;">미끄럼틀세척은 안쪽이 본체입니다</h2>
-<p style="margin:0 0 18px;font-size:17px;font-weight:400;line-height:1.75;letter-spacing:-0.01em;color:#131313;">미끄럼틀 바깥면은 비가 씻어 줍니다. <strong>안쪽은 비가 닿지 않습니다.</strong> 터널형이면 더 그렇습니다. 그래서 겉은 멀쩡한데 안으로 들어가 보면 흙과 이끼가 얇게 깔려 있는 경우가 흔합니다.</p>
-<p style="margin:0 0 18px;font-size:17px;font-weight:400;line-height:1.75;letter-spacing:-0.01em;color:#131313;">미끄럼틀세척의 안쪽 작업은 물줄기를 한쪽 입구에서 넣어 반대쪽으로 밀어내는 방식입니다. 곡선 구간은 물이 벽을 타고 돌기 때문에 각도를 조금씩 바꿔 가며 몇 번 지나갑니다. 손이 닿는 구간은 마지막에 직접 문질러 마무리합니다.</p>
-<figure style="margin:32px 0;"><img src="/images/reviews/outdoor-playground-05.webp" alt="놀이시설 계단과 난간 측면을 작업자가 물줄기로 세척하는 장면" loading="lazy" style="width:100%;height:auto;display:block;border-radius:12px;"><figcaption style="margin-top:10px;font-size:13px;font-weight:500;line-height:1.5;color:#5B6B7B;">한 자리에 오래 대지 않고 지나가며 밀어냅니다</figcaption></figure>
-<h2 style="margin:64px 0 16px;font-size:clamp(24px,3vw,32px);font-weight:800;line-height:1.25;letter-spacing:-0.02em;color:#000;">압력은 시설재가 정합니다</h2>
-<p style="margin:0 0 18px;font-size:17px;font-weight:400;line-height:1.75;letter-spacing:-0.01em;color:#131313;">놀이기구세척의 대상은 대부분 성형 플라스틱과 도색 금속입니다. 둘 다 고압을 오래 대면 표면이 상합니다. 플라스틱은 광이 죽고 미세한 흠집이 생겨 오히려 때가 더 잘 끼게 되고, 도색 금속은 도막이 벗겨져 그 자리에서 녹이 시작됩니다.</p>
-<p style="margin:0 0 18px;font-size:17px;font-weight:400;line-height:1.75;letter-spacing:-0.01em;color:#131313;">그래서 압력은 낮게 잡고 <strong>한 자리에 머무르지 않습니다.</strong> 잘 안 지워지는 자국은 압력을 올리는 대신 세제를 얹어 시간을 두거나 손으로 문지릅니다. 스티커 자국과 낙서는 별도로 판단해 말씀드립니다.</p>
-<figure style="margin:32px 0;"><img src="/images/reviews/outdoor-playground-06.webp" alt="복합 놀이시설 전체에 넓게 물을 뿌려 마지막으로 헹구는 장면" loading="lazy" style="width:100%;height:auto;display:block;border-radius:12px;"><figcaption style="margin-top:10px;font-size:13px;font-weight:500;line-height:1.5;color:#5B6B7B;">마지막은 전체를 한 번 더 흘려 세제를 완전히 뺍니다</figcaption></figure>
-<h2 style="margin:64px 0 16px;font-size:clamp(24px,3vw,32px);font-weight:800;line-height:1.25;letter-spacing:-0.02em;color:#000;">바닥재는 따로 봅니다</h2>
-<p style="margin:0 0 18px;font-size:17px;font-weight:400;line-height:1.75;letter-spacing:-0.01em;color:#131313;">놀이터 바닥은 모래, 고무 매트, 인조잔디 중 하나입니다. 세 가지가 전혀 다릅니다.</p>
-<p style="margin:0 0 18px;font-size:17px;font-weight:400;line-height:1.75;letter-spacing:-0.01em;color:#131313;"><strong>모래 바닥</strong>은 세척 대상이 아닙니다. 물을 뿌리면 젖어 뭉치기만 하므로, 여기는 놀이기구에서 씻겨 내린 물이 잘 빠지도록 방향만 잡아 줍니다. <strong>고무 매트</strong>는 압력을 낮게 써야 합니다. 강하게 대면 표면 알갱이가 떨어져 나가고 그 자리가 패입니다. <strong>인조잔디</strong>는 눕지 않게 결 방향으로 지나가고, 사이에 낀 흙은 압력이 아니라 물의 양으로 띄웁니다.</p>
+<figure style="margin:32px 0;"><img src="/images/reviews/outdoor-playground-02.webp" alt="놀이터 난간과 상부 구조를 작업자가 위로 손을 뻗어 세척하는 장면" loading="lazy" style="width:100%;height:auto;display:block;border-radius:12px;"><figcaption style="margin-top:10px;font-size:13px;font-weight:500;letter-spacing:0;line-height:1.5;color:#5B6B7B;">손이 닿는 높이 — 여기가 가장 진합니다</figcaption></figure>
+<h2 style="margin:64px 0 16px;font-size:clamp(24px,3vw,32px);font-weight:700;line-height:1.25;letter-spacing:-0.02em;color:#000;">놀이터청소는 기준이 다릅니다</h2>
+<p style="margin:0 0 18px;font-size:18px;font-weight:400;line-height:1.7;letter-spacing:-0.01em;color:#131313;">야외시설 세척은 대체로 「보기에 깨끗하면 된다」로 끝납니다. 놀이터는 그 기준으로는 부족합니다. <strong>아이들이 손으로 만지고, 그 손을 입에 넣습니다.</strong></p>
+<p style="margin:0 0 18px;font-size:18px;font-weight:400;line-height:1.7;letter-spacing:-0.01em;color:#131313;">그래서 놀이기구세척에서는 세척보다 <strong>헹굼</strong>이 중심입니다. 세제를 쓸지 말지, 쓴다면 어디에 얼마나 쓸지를 먼저 정하고, 쓴 자리는 반드시 두 번 이상 흘려 씻습니다. 잘 지워지지만 헹구기 어려운 방법보다, 조금 더 걸리더라도 잔여물이 남지 않는 방법을 고릅니다.</p>
+<figure style="margin:32px 0;"><img src="/images/reviews/outdoor-playground-03.webp" alt="사다리에 올라선 작업자가 터널형 미끄럼틀 상부에 물을 분사하는 장면" loading="lazy" style="width:100%;height:auto;display:block;border-radius:12px;"><figcaption style="margin-top:10px;font-size:13px;font-weight:500;letter-spacing:0;line-height:1.5;color:#5B6B7B;">터널 상부는 사다리를 세워 위에서 넣습니다</figcaption></figure>
+<h2 style="margin:64px 0 16px;font-size:clamp(24px,3vw,32px);font-weight:700;line-height:1.25;letter-spacing:-0.02em;color:#000;">어디를 만지는지 보고 순서를 짭니다</h2>
+<p style="margin:0 0 18px;font-size:18px;font-weight:400;line-height:1.7;letter-spacing:-0.01em;color:#131313;">놀이터청소를 한 덩어리로 보면 정작 중요한 곳을 놓칩니다. 아이가 실제로 손을 대는 자리는 정해져 있습니다.</p>
+<ul style="margin:0 0 18px;padding-left:22px;"><li style="margin:0 0 8px;font-size:18px;line-height:1.9;color:#131313;"><strong>손잡이와 난간</strong> — 오르내릴 때 반드시 잡습니다. 손때가 가장 진합니다.</li><li style="margin:0 0 8px;font-size:18px;line-height:1.9;color:#131313;"><strong>미끄럼틀 안쪽 면</strong> — 몸 전체가 닿고, 아래로 내려오며 문지릅니다.</li><li style="margin:0 0 8px;font-size:18px;line-height:1.9;color:#131313;"><strong>계단 디딤판과 옆 벽</strong> — 발과 손이 함께 닿습니다.</li><li style="margin:0 0 8px;font-size:18px;line-height:1.9;color:#131313;"><strong>터널 내부</strong> — 볕이 안 들어 이끼와 곰팡이가 자랍니다.</li></ul>
+<p style="margin:0 0 18px;font-size:18px;font-weight:400;line-height:1.7;letter-spacing:-0.01em;color:#131313;">이 네 곳이 먼저입니다. 기둥이나 지붕 바깥면은 그다음입니다. 시간이 부족한 날에는 이 순서대로 자르고, 남은 구간을 다음으로 미룹니다.</p>
+<figure style="margin:32px 0;"><img src="/images/reviews/outdoor-playground-04.webp" alt="놀이시설의 초록색 곡면 성형물 이음새 주변을 작업자가 물로 세척하는 장면" loading="lazy" style="width:100%;height:auto;display:block;border-radius:12px;"><figcaption style="margin-top:10px;font-size:13px;font-weight:500;letter-spacing:0;line-height:1.5;color:#5B6B7B;">성형물이 겹쳐지는 홈에 때가 몰려 있습니다</figcaption></figure>
+<h2 style="margin:64px 0 16px;font-size:clamp(24px,3vw,32px);font-weight:700;line-height:1.25;letter-spacing:-0.02em;color:#000;">미끄럼틀세척은 안쪽이 본체입니다</h2>
+<p style="margin:0 0 18px;font-size:18px;font-weight:400;line-height:1.7;letter-spacing:-0.01em;color:#131313;">미끄럼틀 바깥면은 비가 씻어 줍니다. <strong>안쪽은 비가 닿지 않습니다.</strong> 터널형이면 더 그렇습니다. 그래서 겉은 멀쩡한데 안으로 들어가 보면 흙과 이끼가 얇게 깔려 있는 경우가 흔합니다.</p>
+<p style="margin:0 0 18px;font-size:18px;font-weight:400;line-height:1.7;letter-spacing:-0.01em;color:#131313;">미끄럼틀세척의 안쪽 작업은 물줄기를 한쪽 입구에서 넣어 반대쪽으로 밀어내는 방식입니다. 곡선 구간은 물이 벽을 타고 돌기 때문에 각도를 조금씩 바꿔 가며 몇 번 지나갑니다. 손이 닿는 구간은 마지막에 직접 문질러 마무리합니다.</p>
+<figure style="margin:32px 0;"><img src="/images/reviews/outdoor-playground-05.webp" alt="놀이시설 계단과 난간 측면을 작업자가 물줄기로 세척하는 장면" loading="lazy" style="width:100%;height:auto;display:block;border-radius:12px;"><figcaption style="margin-top:10px;font-size:13px;font-weight:500;letter-spacing:0;line-height:1.5;color:#5B6B7B;">한 자리에 오래 대지 않고 지나가며 밀어냅니다</figcaption></figure>
+<h2 style="margin:64px 0 16px;font-size:clamp(24px,3vw,32px);font-weight:700;line-height:1.25;letter-spacing:-0.02em;color:#000;">압력은 시설재가 정합니다</h2>
+<p style="margin:0 0 18px;font-size:18px;font-weight:400;line-height:1.7;letter-spacing:-0.01em;color:#131313;">놀이기구세척의 대상은 대부분 성형 플라스틱과 도색 금속입니다. 둘 다 고압을 오래 대면 표면이 상합니다. 플라스틱은 광이 죽고 미세한 흠집이 생겨 오히려 때가 더 잘 끼게 되고, 도색 금속은 도막이 벗겨져 그 자리에서 녹이 시작됩니다.</p>
+<p style="margin:0 0 18px;font-size:18px;font-weight:400;line-height:1.7;letter-spacing:-0.01em;color:#131313;">그래서 압력은 낮게 잡고 <strong>한 자리에 머무르지 않습니다.</strong> 잘 안 지워지는 자국은 압력을 올리는 대신 세제를 얹어 시간을 두거나 손으로 문지릅니다. 스티커 자국과 낙서는 별도로 판단해 말씀드립니다.</p>
+<figure style="margin:32px 0;"><img src="/images/reviews/outdoor-playground-06.webp" alt="복합 놀이시설 전체에 넓게 물을 뿌려 마지막으로 헹구는 장면" loading="lazy" style="width:100%;height:auto;display:block;border-radius:12px;"><figcaption style="margin-top:10px;font-size:13px;font-weight:500;letter-spacing:0;line-height:1.5;color:#5B6B7B;">마지막은 전체를 한 번 더 흘려 세제를 완전히 뺍니다</figcaption></figure>
+<h2 style="margin:64px 0 16px;font-size:clamp(24px,3vw,32px);font-weight:700;line-height:1.25;letter-spacing:-0.02em;color:#000;">바닥재는 따로 봅니다</h2>
+<p style="margin:0 0 18px;font-size:18px;font-weight:400;line-height:1.7;letter-spacing:-0.01em;color:#131313;">놀이터 바닥은 모래, 고무 매트, 인조잔디 중 하나입니다. 세 가지가 전혀 다릅니다.</p>
+<p style="margin:0 0 18px;font-size:18px;font-weight:400;line-height:1.7;letter-spacing:-0.01em;color:#131313;"><strong>모래 바닥</strong>은 세척 대상이 아닙니다. 물을 뿌리면 젖어 뭉치기만 하므로, 여기는 놀이기구에서 씻겨 내린 물이 잘 빠지도록 방향만 잡아 줍니다. <strong>고무 매트</strong>는 압력을 낮게 써야 합니다. 강하게 대면 표면 알갱이가 떨어져 나가고 그 자리가 패입니다. <strong>인조잔디</strong>는 눕지 않게 결 방향으로 지나가고, 사이에 낀 흙은 압력이 아니라 물의 양으로 띄웁니다.</p>
 <figure style="margin:32px 0;"><img src="/images/reviews/outdoor-playground-xb01.webp" alt="놀이터청소·놀이기구세척 추가 현장 기록" loading="lazy" style="width:100%;height:auto;display:block;border-radius:12px;"></figure>
-<h2 style="margin:64px 0 16px;font-size:clamp(24px,3vw,32px);font-weight:800;line-height:1.25;letter-spacing:-0.02em;color:#000;">헹구고 나서 한 번 더 봅니다</h2>
-<p style="margin:0 0 18px;font-size:17px;font-weight:400;line-height:1.75;letter-spacing:-0.01em;color:#131313;">작업을 마치기 전에 <strong>아이 눈높이로 앉아서</strong> 한 바퀴 돕니다. 서서 볼 때 안 보이던 것들이 이때 보입니다. 미끄럼틀 안쪽 아래, 계단 밑면, 난간 아래쪽 같은 자리입니다.</p>
-<p style="margin:0 0 18px;font-size:17px;font-weight:400;line-height:1.75;letter-spacing:-0.01em;color:#131313;">여기서 남은 자국이 보이면 그 구간만 다시 적셔 마무리합니다. 그다음 복합놀이대청소를 마무리하며 전체를 한 번 더 흘려 헹구고, 물기를 털어냅니다. 젖은 놀이기구는 미끄러우므로 마를 때까지 이용을 미뤄 주시도록 안내드리고, 그날 조건에서 마르는 데 걸릴 시간을 함께 말씀드립니다.</p>
+<h2 style="margin:64px 0 16px;font-size:clamp(24px,3vw,32px);font-weight:700;line-height:1.25;letter-spacing:-0.02em;color:#000;">헹구고 나서 한 번 더 봅니다</h2>
+<p style="margin:0 0 18px;font-size:18px;font-weight:400;line-height:1.7;letter-spacing:-0.01em;color:#131313;">작업을 마치기 전에 <strong>아이 눈높이로 앉아서</strong> 한 바퀴 돕니다. 서서 볼 때 안 보이던 것들이 이때 보입니다. 미끄럼틀 안쪽 아래, 계단 밑면, 난간 아래쪽 같은 자리입니다.</p>
+<p style="margin:0 0 18px;font-size:18px;font-weight:400;line-height:1.7;letter-spacing:-0.01em;color:#131313;">여기서 남은 자국이 보이면 그 구간만 다시 적셔 마무리합니다. 그다음 복합놀이대청소를 마무리하며 전체를 한 번 더 흘려 헹구고, 물기를 털어냅니다. 젖은 놀이기구는 미끄러우므로 마를 때까지 이용을 미뤄 주시도록 안내드리고, 그날 조건에서 마르는 데 걸릴 시간을 함께 말씀드립니다.</p>
 <figure style="margin:32px 0;"><img src="/images/reviews/outdoor-playground-xb02.webp" alt="놀이터청소·놀이기구세척 추가 현장 기록" loading="lazy" style="width:100%;height:auto;display:block;border-radius:12px;"></figure>
-<h2 style="margin:64px 0 16px;font-size:clamp(24px,3vw,32px);font-weight:800;line-height:1.25;letter-spacing:-0.02em;color:#000;">그물과 밧줄은 말리는 시간까지 봅니다</h2>
-<p style="margin:0 0 18px;font-size:17px;font-weight:400;line-height:1.75;letter-spacing:-0.01em;color:#131313;">복합놀이대청소에서 그물이나 밧줄 구조가 있으면 여기가 가장 오래 젖어 있습니다. 섬유가 물을 머금어 겉이 말라도 안쪽에 습기가 남고, 그 상태로 며칠 지나면 냄새가 나기 시작합니다.</p>
-<p style="margin:0 0 18px;font-size:17px;font-weight:400;line-height:1.75;letter-spacing:-0.01em;color:#131313;">그래서 그물류는 물을 최소로 쓰고, 세척 후에 물기를 털어 낸 다음 바람이 통하는 상태로 둡니다. 볕이 드는 날을 골라 작업하는 이유 중 하나가 이것입니다. 흐린 날에 그물까지 하면 마르는 데만 하루가 더 걸립니다.</p>
+<h2 style="margin:64px 0 16px;font-size:clamp(24px,3vw,32px);font-weight:700;line-height:1.25;letter-spacing:-0.02em;color:#000;">그물과 밧줄은 말리는 시간까지 봅니다</h2>
+<p style="margin:0 0 18px;font-size:18px;font-weight:400;line-height:1.7;letter-spacing:-0.01em;color:#131313;">복합놀이대청소에서 그물이나 밧줄 구조가 있으면 여기가 가장 오래 젖어 있습니다. 섬유가 물을 머금어 겉이 말라도 안쪽에 습기가 남고, 그 상태로 며칠 지나면 냄새가 나기 시작합니다.</p>
+<p style="margin:0 0 18px;font-size:18px;font-weight:400;line-height:1.7;letter-spacing:-0.01em;color:#131313;">그래서 그물류는 물을 최소로 쓰고, 세척 후에 물기를 털어 낸 다음 바람이 통하는 상태로 둡니다. 볕이 드는 날을 골라 작업하는 이유 중 하나가 이것입니다. 흐린 날에 그물까지 하면 마르는 데만 하루가 더 걸립니다.</p>
 <figure style="margin:32px 0;"><img src="/images/reviews/outdoor-playground-xb03.webp" alt="놀이터청소·놀이기구세척 추가 현장 기록" loading="lazy" style="width:100%;height:auto;display:block;border-radius:12px;"></figure>
-<h2 style="margin:64px 0 16px;font-size:clamp(24px,3vw,32px);font-weight:800;line-height:1.25;letter-spacing:-0.02em;color:#000;">시기를 고르면 결과가 달라집니다</h2>
-<p style="margin:0 0 18px;font-size:17px;font-weight:400;line-height:1.75;letter-spacing:-0.01em;color:#131313;">놀이터는 계절을 타는 시설입니다. 겨울 동안 이용이 줄면서 이끼와 낙엽이 쌓이고, 봄에 아이들이 돌아오기 시작합니다. 그래서 <strong>봄이 시작되기 직전</strong>이 가장 좋은 시기입니다.</p>
-<p style="margin:0 0 18px;font-size:17px;font-weight:400;line-height:1.75;letter-spacing:-0.01em;color:#131313;">여름 장마 뒤도 좋습니다. 습기가 오래 머무른 직후라 이끼가 막 자리 잡은 상태이고, 이때 잡으면 얇게 걷힙니다. 반대로 한여름 이용이 많은 시기는 통제가 어려워 시간이 늘어납니다. 단지놀이시설관리 일정이 이미 잡혀 있으면 거기에 붙여 진행하시는 편이 수월합니다.</p>
-<h2 style="margin:64px 0 16px;font-size:clamp(24px,3vw,32px);font-weight:800;line-height:1.25;letter-spacing:-0.02em;color:#000;">하루는 이렇게 흘러갑니다</h2>
-<ol style="margin:0 0 18px;padding-left:22px;"><li style="margin:0 0 8px;font-size:17px;line-height:1.75;color:#131313;"><strong>사진 견적</strong> — 놀이터 전경과 기구별 사진으로 규모와 재질을 봅니다.</li><li style="margin:0 0 8px;font-size:17px;line-height:1.75;color:#131313;"><strong>이용 통제</strong> — 입구에 표시를 세우고 작업 구역을 비웁니다.</li><li style="margin:0 0 8px;font-size:17px;line-height:1.75;color:#131313;"><strong>손 닿는 곳부터</strong> — 손잡이·난간·미끄럼틀 안쪽·계단 순으로 진행합니다.</li><li style="margin:0 0 8px;font-size:17px;line-height:1.75;color:#131313;"><strong>바깥면과 기둥</strong> — 넓은 면을 낮은 압력으로 이어 갑니다.</li><li style="margin:0 0 8px;font-size:17px;line-height:1.75;color:#131313;"><strong>바닥재</strong> — 모래·매트·인조잔디를 각각 다른 방식으로 정리합니다.</li><li style="margin:0 0 8px;font-size:17px;line-height:1.75;color:#131313;"><strong>눈높이 점검 → 헹굼</strong> — 앉아서 한 바퀴 돌고, 전체를 다시 흘려 마칩니다.</li></ol>
-<h2 style="margin:64px 0 16px;font-size:clamp(24px,3vw,32px);font-weight:800;line-height:1.25;letter-spacing:-0.02em;color:#000;">비용은 어떻게 되나요?</h2>
-<p style="margin:0 0 18px;font-size:17px;font-weight:400;line-height:1.75;letter-spacing:-0.01em;color:#131313;">놀이터청소는 한 곳을 기준으로 <strong>45만원부터</strong>입니다. 놀이대 개수와 크기, 터널이나 곡선 구간이 얼마나 있는지, 바닥재 종류, 이용 통제 조건이 금액을 정합니다. 손으로 마무리해야 할 구간이 많으면 시간이 늘고, 반대로 같은 단지의 여러 놀이터를 한 번에 맡기시면 장비 준비가 한 번이라 유리합니다. 놀이터가 한눈에 들어오는 사진 두세 장을 주시면 당일에 금액을 안내드립니다. <strong>부가세는 별도입니다.</strong></p>
-<h2 style="margin:64px 0 16px;font-size:clamp(24px,3vw,32px);font-weight:800;line-height:1.25;letter-spacing:-0.02em;color:#000;">자주 묻는 질문</h2>
+<h2 style="margin:64px 0 16px;font-size:clamp(24px,3vw,32px);font-weight:700;line-height:1.25;letter-spacing:-0.02em;color:#000;">시기를 고르면 결과가 달라집니다</h2>
+<p style="margin:0 0 18px;font-size:18px;font-weight:400;line-height:1.7;letter-spacing:-0.01em;color:#131313;">놀이터는 계절을 타는 시설입니다. 겨울 동안 이용이 줄면서 이끼와 낙엽이 쌓이고, 봄에 아이들이 돌아오기 시작합니다. 그래서 <strong>봄이 시작되기 직전</strong>이 가장 좋은 시기입니다.</p>
+<p style="margin:0 0 18px;font-size:18px;font-weight:400;line-height:1.7;letter-spacing:-0.01em;color:#131313;">여름 장마 뒤도 좋습니다. 습기가 오래 머무른 직후라 이끼가 막 자리 잡은 상태이고, 이때 잡으면 얇게 걷힙니다. 반대로 한여름 이용이 많은 시기는 통제가 어려워 시간이 늘어납니다. 단지놀이시설관리 일정이 이미 잡혀 있으면 거기에 붙여 진행하시는 편이 수월합니다.</p>
+<h2 style="margin:64px 0 16px;font-size:clamp(24px,3vw,32px);font-weight:700;line-height:1.25;letter-spacing:-0.02em;color:#000;">하루는 이렇게 흘러갑니다</h2>
+<ol style="margin:0 0 18px;padding-left:22px;"><li style="margin:0 0 8px;font-size:18px;line-height:1.9;color:#131313;"><strong>사진 견적</strong> — 놀이터 전경과 기구별 사진으로 규모와 재질을 봅니다.</li><li style="margin:0 0 8px;font-size:18px;line-height:1.9;color:#131313;"><strong>이용 통제</strong> — 입구에 표시를 세우고 작업 구역을 비웁니다.</li><li style="margin:0 0 8px;font-size:18px;line-height:1.9;color:#131313;"><strong>손 닿는 곳부터</strong> — 손잡이·난간·미끄럼틀 안쪽·계단 순으로 진행합니다.</li><li style="margin:0 0 8px;font-size:18px;line-height:1.9;color:#131313;"><strong>바깥면과 기둥</strong> — 넓은 면을 낮은 압력으로 이어 갑니다.</li><li style="margin:0 0 8px;font-size:18px;line-height:1.9;color:#131313;"><strong>바닥재</strong> — 모래·매트·인조잔디를 각각 다른 방식으로 정리합니다.</li><li style="margin:0 0 8px;font-size:18px;line-height:1.9;color:#131313;"><strong>눈높이 점검 → 헹굼</strong> — 앉아서 한 바퀴 돌고, 전체를 다시 흘려 마칩니다.</li></ol>
+<h2 style="margin:64px 0 16px;font-size:clamp(24px,3vw,32px);font-weight:700;line-height:1.25;letter-spacing:-0.02em;color:#000;">비용은 어떻게 되나요?</h2>
+<p style="margin:0 0 18px;font-size:18px;font-weight:400;line-height:1.7;letter-spacing:-0.01em;color:#131313;">놀이터청소는 한 곳을 기준으로 <strong>45만원부터</strong>입니다. 놀이대 개수와 크기, 터널이나 곡선 구간이 얼마나 있는지, 바닥재 종류, 이용 통제 조건이 금액을 정합니다. 손으로 마무리해야 할 구간이 많으면 시간이 늘고, 반대로 같은 단지의 여러 놀이터를 한 번에 맡기시면 장비 준비가 한 번이라 유리합니다. 놀이터가 한눈에 들어오는 사진 두세 장을 주시면 당일에 금액을 안내드립니다. <strong>부가세는 별도입니다.</strong></p>
+<h2 style="margin:64px 0 16px;font-size:clamp(24px,3vw,32px);font-weight:700;line-height:1.25;letter-spacing:-0.02em;color:#000;">자주 묻는 질문</h2>
 <p style="margin:28px 0 8px;font-size:18px;font-weight:700;line-height:1.5;color:#000;">Q. 세제를 쓰면 아이에게 해롭지 않나요?</p>
-<p style="margin:0 0 18px;font-size:17px;font-weight:400;line-height:1.75;letter-spacing:-0.01em;color:#131313;"></p>
+<p style="margin:0 0 18px;font-size:18px;font-weight:400;line-height:1.7;letter-spacing:-0.01em;color:#131313;"></p>
 <p style="margin:28px 0 8px;font-size:18px;font-weight:700;line-height:1.5;color:#000;">Q. 언제부터 다시 놀 수 있나요?</p>
-<p style="margin:0 0 18px;font-size:17px;font-weight:400;line-height:1.75;letter-spacing:-0.01em;color:#131313;"></p>
+<p style="margin:0 0 18px;font-size:18px;font-weight:400;line-height:1.7;letter-spacing:-0.01em;color:#131313;"></p>
 <p style="margin:28px 0 8px;font-size:18px;font-weight:700;line-height:1.5;color:#000;">Q. 미끄럼틀 안쪽도 하나요?</p>
-<p style="margin:0 0 18px;font-size:17px;font-weight:400;line-height:1.75;letter-spacing:-0.01em;color:#131313;"></p>
+<p style="margin:0 0 18px;font-size:18px;font-weight:400;line-height:1.7;letter-spacing:-0.01em;color:#131313;"></p>
 <p style="margin:28px 0 8px;font-size:18px;font-weight:700;line-height:1.5;color:#000;">Q. 도색이 벗겨지지 않나요?</p>
-<p style="margin:0 0 18px;font-size:17px;font-weight:400;line-height:1.75;letter-spacing:-0.01em;color:#131313;"></p>
+<p style="margin:0 0 18px;font-size:18px;font-weight:400;line-height:1.7;letter-spacing:-0.01em;color:#131313;"></p>
 <p style="margin:28px 0 8px;font-size:18px;font-weight:700;line-height:1.5;color:#000;">Q. 낙서나 스티커 자국도 지워지나요?</p>
-<p style="margin:0 0 18px;font-size:17px;font-weight:400;line-height:1.75;letter-spacing:-0.01em;color:#131313;"></p>
+<p style="margin:0 0 18px;font-size:18px;font-weight:400;line-height:1.7;letter-spacing:-0.01em;color:#131313;"></p>
 <p style="margin:28px 0 8px;font-size:18px;font-weight:700;line-height:1.5;color:#000;">Q. 모래 바닥도 청소가 되나요?</p>
-<p style="margin:0 0 18px;font-size:17px;font-weight:400;line-height:1.75;letter-spacing:-0.01em;color:#131313;"></p>
+<p style="margin:0 0 18px;font-size:18px;font-weight:400;line-height:1.7;letter-spacing:-0.01em;color:#131313;"></p>
 <p style="margin:28px 0 8px;font-size:18px;font-weight:700;line-height:1.5;color:#000;">Q. 작업 중에 아이들이 오면 어떻게 하나요?</p>
-<p style="margin:0 0 18px;font-size:17px;font-weight:400;line-height:1.75;letter-spacing:-0.01em;color:#131313;"></p>
+<p style="margin:0 0 18px;font-size:18px;font-weight:400;line-height:1.7;letter-spacing:-0.01em;color:#131313;"></p>
 <p style="margin:28px 0 8px;font-size:18px;font-weight:700;line-height:1.5;color:#000;">Q. 얼마나 자주 하면 되나요?</p>
-<p style="margin:0 0 18px;font-size:17px;font-weight:400;line-height:1.75;letter-spacing:-0.01em;color:#131313;"></p>
+<p style="margin:0 0 18px;font-size:18px;font-weight:400;line-height:1.7;letter-spacing:-0.01em;color:#131313;"></p>
 <p style="margin:28px 0 8px;font-size:18px;font-weight:700;line-height:1.5;color:#000;">Q. 놀이터가 여러 개인데 묶으면 유리한가요?</p>
-<p style="margin:0 0 18px;font-size:17px;font-weight:400;line-height:1.75;letter-spacing:-0.01em;color:#131313;"></p>
+<p style="margin:0 0 18px;font-size:18px;font-weight:400;line-height:1.7;letter-spacing:-0.01em;color:#131313;"></p>
 <p style="margin:28px 0 8px;font-size:18px;font-weight:700;line-height:1.5;color:#000;">Q. 문의할 때 필요한 것이 있나요?</p>
-<p style="margin:0 0 18px;font-size:17px;font-weight:400;line-height:1.75;letter-spacing:-0.01em;color:#131313;"></p>
-<h2 style="margin:64px 0 16px;font-size:clamp(24px,3vw,32px);font-weight:800;line-height:1.25;letter-spacing:-0.02em;color:#000;">상담 전에 알려주시면 좋은 것</h2>
-<ul style="margin:0 0 18px;padding-left:22px;"><li style="margin:0 0 8px;font-size:17px;line-height:1.75;color:#131313;">놀이대 개수와 대략적인 규모</li><li style="margin:0 0 8px;font-size:17px;line-height:1.75;color:#131313;">바닥재 종류(모래·고무 매트·인조잔디)</li><li style="margin:0 0 8px;font-size:17px;line-height:1.75;color:#131313;">터널이나 곡선 구간이 있는지</li><li style="margin:0 0 8px;font-size:17px;line-height:1.75;color:#131313;">이용이 가장 적은 시간대</li><li style="margin:0 0 8px;font-size:17px;line-height:1.75;color:#131313;">단지놀이시설관리 일정이 정해져 있는지</li></ul>
-<p style="margin:0 0 18px;font-size:17px;font-weight:400;line-height:1.75;letter-spacing:-0.01em;color:#131313;">봄 시작 전과 장마 직후에 문의가 몰립니다. 아이들이 쓰는 시설이라 통제 시간이 필요하니 일정을 미리 잡아 주세요.</p>
+<p style="margin:0 0 18px;font-size:18px;font-weight:400;line-height:1.7;letter-spacing:-0.01em;color:#131313;"></p>
+<h2 style="margin:64px 0 16px;font-size:clamp(24px,3vw,32px);font-weight:700;line-height:1.25;letter-spacing:-0.02em;color:#000;">상담 전에 알려주시면 좋은 것</h2>
+<ul style="margin:0 0 18px;padding-left:22px;"><li style="margin:0 0 8px;font-size:18px;line-height:1.9;color:#131313;">놀이대 개수와 대략적인 규모</li><li style="margin:0 0 8px;font-size:18px;line-height:1.9;color:#131313;">바닥재 종류(모래·고무 매트·인조잔디)</li><li style="margin:0 0 8px;font-size:18px;line-height:1.9;color:#131313;">터널이나 곡선 구간이 있는지</li><li style="margin:0 0 8px;font-size:18px;line-height:1.9;color:#131313;">이용이 가장 적은 시간대</li><li style="margin:0 0 8px;font-size:18px;line-height:1.9;color:#131313;">단지놀이시설관리 일정이 정해져 있는지</li></ul>
+<p style="margin:0 0 18px;font-size:18px;font-weight:400;line-height:1.7;letter-spacing:-0.01em;color:#131313;">봄 시작 전과 장마 직후에 문의가 몰립니다. 아이들이 쓰는 시설이라 통제 시간이 필요하니 일정을 미리 잡아 주세요.</p>
   </div>
 </section>
 
@@ -446,14 +448,14 @@ section[data-screen-label='12 사업자 정보'] a{color:inherit !important;text
   <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,48px);text-align:center;">
     <h2 style="margin:0 0 12px;font-size:clamp(24px,3.4vw,40px);font-weight:900;line-height:1.25;letter-spacing:-0.02em;color:#FFF;">우리 건물도 이렇게 될까요?</h2>
     <p style="margin:0 0 40px;font-size:clamp(15px,2vw,18px);font-weight:400;line-height:1.6;color:#CBCBCB;">부산 울산 대구 경남 경북 어디든 사진 3장이면 알 수 있습니다</p>
-    <a href="https://pf.kakao.com/_PSxfan/chat" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;border-radius:60px;padding:16px 32px;font-size:16px;font-weight:500;white-space:nowrap;background:#1CA2F3;color:#FFF;text-decoration:none;">카카오톡 견적문의</a>
+    <a href="https://pf.kakao.com/_PSxfan/chat" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;border-radius:60px;padding:16px 32px;font-size: 15px;font-weight:500;white-space:nowrap;background:#1CA2F3;color:#FFF;text-decoration:none;">카카오톡 견적문의</a>
   </div>
 </section>
 <section style="position:relative;background:linear-gradient(rgba(10,14,18,0.82), rgba(10,14,18,0.88)), url('/images/cta-fac-b.webp') center / cover no-repeat #131313;padding:96px 0 104px;">
   <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,48px);">
-    <p style="margin:0 0 10px;font-size:14px;font-weight:700;letter-spacing:0.08em;color:#9AA6B2;">이어서 보기</p>
-    <p style="margin:0 0 28px;font-size:clamp(20px,2.6vw,28px);font-weight:900;line-height:1.35;letter-spacing:-0.02em;color:#FFF;">다른 현장 기록도 이어서 확인해 보세요</p>
-    <p style="margin:0;font-size:16px;line-height:2.4;"><a href="/outdoor" style="color:#5FBEF7;font-weight:700;text-decoration:none;margin-right:24px;">고압세척 페이지</a> <a href="/outdoor/tent" style="color:#5FBEF7;font-weight:700;text-decoration:none;margin-right:24px;">포항 텐트청소 후기</a> <a href="/outdoor/tent-shade" style="color:#5FBEF7;font-weight:700;text-decoration:none;margin-right:24px;">창원 천막 차양막청소 후기</a> <a href="/outdoor/roof" style="color:#5FBEF7;font-weight:700;text-decoration:none;margin-right:24px;">밀양 지붕청소 후기</a></p>
+    <p style="margin:0 0 10px;font-size:13px;font-weight:700;letter-spacing:0.08em;color:#9AA6B2;">이어서 보기</p>
+    <p style="margin:0 0 28px;font-size:clamp(24px,3vw,32px);font-weight:900;line-height:1.35;letter-spacing:-0.02em;color:#FFF;">다른 현장 기록도 이어서 확인해 보세요</p>
+    <p style="margin:0;font-size:15px;line-height:2.4;"><a href="/outdoor" style="color:#5FBEF7;font-weight:700;text-decoration:none;margin-right:24px;">고압세척 페이지</a> <a href="/outdoor/tent" style="color:#5FBEF7;font-weight:700;text-decoration:none;margin-right:24px;">포항 텐트청소 후기</a> <a href="/outdoor/tent-shade" style="color:#5FBEF7;font-weight:700;text-decoration:none;margin-right:24px;">창원 천막 차양막청소 후기</a> <a href="/outdoor/roof" style="color:#5FBEF7;font-weight:700;text-decoration:none;margin-right:24px;">밀양 지붕청소 후기</a></p>
   </div>
 </section></article></main>
 <footer data-screen-label="푸터" style="position: relative; background: #000000; margin-top: calc(-1px - clamp(24px, calc(24px + (100cqi - 767px) * 100), 48px)); padding: calc(clamp(64px, calc(64px + (100cqi - 767px) * 100), 128px) + clamp(24px, calc(24px + (100cqi - 767px) * 100), 48px)) 0 clamp(48px, calc(48px + (100cqi - 767px) * 100), 64px); padding-bottom: clamp(48px, calc(48px + (100cqi - 767px) * 100), 64px); clip-path: polygon(0 0, calc(50% - clamp(12px, calc(12px + (100cqi - 767px) * 100), 24px)) 0, calc(50% + clamp(12px, calc(12px + (100cqi - 767px) * 100), 24px)) clamp(24px, calc(24px + (100cqi - 767px) * 100), 48px), 100% clamp(24px, calc(24px + (100cqi - 767px) * 100), 48px), 100% 100%, 0 100%);">
@@ -489,27 +491,27 @@ section[data-screen-label='12 사업자 정보'] a{color:inherit !important;text
           <p style="margin: 4px 0 20px; max-width: 720px; font-size: 14px; font-weight: 400; line-height: 1.7; letter-spacing: -0.01em; color: #9AA6B2; text-wrap: pretty;">아래 모든 지역이 사진 견적 대상이며, 시군별로 외벽청소 간판청소 유리창청소 고압세척을 동일한 기준으로 진행합니다.</p>
           <div style="display: flex; flex-wrap: wrap; gap: 24px;">
             <div style="flex: 1 1 clamp(calc(50% - 12px), calc(100% - (100cqi - 767px) * 1000), 100%); min-width: 0;">
-              <span style="display: block; font-size: 16px; font-weight: 700; line-height: 1.4; letter-spacing: -0.02em; color: #FFFFFF;">부산</span>
+              <span style="display: block; font-size: 15px; font-weight: 700; line-height: 1.4; letter-spacing: -0.02em; color: #FFFFFF;">부산</span>
               <p style="margin: 6px 0 0; font-size: 15px; font-weight: 500; line-height: 1.7; letter-spacing: -0.01em; color: #CBCBCB; text-wrap: pretty;">중구 서구 동구 영도구 부산진구 동래구 남구 북구 해운대구 사하구 금정구 강서구 연제구 수영구 사상구 기장군</p>
               <p style="margin: 4px 0 0; font-size: 13px; font-weight: 400; line-height: 1.7; letter-spacing: 0; color: #7A8694; text-wrap: pretty;">해운대 광안리 수영 연산 동래 서면 사상 사하 기장 영도 덕천 화명 남포 금정 연제 센텀 마린시티 우동 남천 민락 대연 용호 문현 온천동 명장 범천 부전 주례 모라 삼락 하단 괴정 당리 명지 정관 일광 만덕 구포 장전 재송 반여 좌동 사직 송정</p>
             </div>
             <div style="flex: 1 1 clamp(calc(50% - 12px), calc(100% - (100cqi - 767px) * 1000), 100%); min-width: 0;">
-              <span style="display: block; font-size: 16px; font-weight: 700; line-height: 1.4; letter-spacing: -0.02em; color: #FFFFFF;">울산</span>
+              <span style="display: block; font-size: 15px; font-weight: 700; line-height: 1.4; letter-spacing: -0.02em; color: #FFFFFF;">울산</span>
               <p style="margin: 6px 0 0; font-size: 15px; font-weight: 500; line-height: 1.7; letter-spacing: -0.01em; color: #CBCBCB; text-wrap: pretty;">중구 남구 동구 북구 울주군</p>
               <p style="margin: 4px 0 0; font-size: 13px; font-weight: 400; line-height: 1.7; letter-spacing: 0; color: #7A8694; text-wrap: pretty;">달동 옥동 울주 언양 온산 범서 방어진 화봉 양정 학성 삼산 신정 성남동 온양</p>
             </div>
             <div style="flex: 1 1 clamp(calc(50% - 12px), calc(100% - (100cqi - 767px) * 1000), 100%); min-width: 0;">
-              <span style="display: block; font-size: 16px; font-weight: 700; line-height: 1.4; letter-spacing: -0.02em; color: #FFFFFF;">대구</span>
+              <span style="display: block; font-size: 15px; font-weight: 700; line-height: 1.4; letter-spacing: -0.02em; color: #FFFFFF;">대구</span>
               <p style="margin: 6px 0 0; font-size: 15px; font-weight: 500; line-height: 1.7; letter-spacing: -0.01em; color: #CBCBCB; text-wrap: pretty;">중구 동구 서구 남구 북구 수성구 달서구 달성군 군위군</p>
               <p style="margin: 4px 0 0; font-size: 13px; font-weight: 400; line-height: 1.7; letter-spacing: 0; color: #7A8694; text-wrap: pretty;">달성 동성로 범어 황금 만촌 시지 성서 두류 상인 화원 현풍 테크노폴리스 칠성동 침산 복현 효목 내당 대명 봉덕 칠곡 검단 신천 비산 월성</p>
             </div>
             <div style="flex: 1 1 clamp(calc(50% - 12px), calc(100% - (100cqi - 767px) * 1000), 100%); min-width: 0;">
-              <span style="display: block; font-size: 16px; font-weight: 700; line-height: 1.4; letter-spacing: -0.02em; color: #FFFFFF;">경남</span>
+              <span style="display: block; font-size: 15px; font-weight: 700; line-height: 1.4; letter-spacing: -0.02em; color: #FFFFFF;">경남</span>
               <p style="margin: 6px 0 0; font-size: 15px; font-weight: 500; line-height: 1.7; letter-spacing: -0.01em; color: #CBCBCB; text-wrap: pretty;">창원 진주 통영 사천 김해 밀양 거제 양산 의령 함안 창녕 고성 남해 하동 산청 함양 거창 합천</p>
               <p style="margin: 4px 0 0; font-size: 13px; font-weight: 400; line-height: 1.7; letter-spacing: 0; color: #7A8694; text-wrap: pretty;">마산 진해 의창 상남 봉곡 팔룡 내서 회원 양덕 합성 석전 오동동 합포 진동 용원 웅동 현동 장유 율하 진영 물금 웅상 고현 장승포 옥포 충무 삼천포 창원성산</p>
             </div>
             <div style="flex: 1 1 clamp(calc(50% - 12px), calc(100% - (100cqi - 767px) * 1000), 100%); min-width: 0;">
-              <span style="display: block; font-size: 16px; font-weight: 700; line-height: 1.4; letter-spacing: -0.02em; color: #FFFFFF;">경북</span>
+              <span style="display: block; font-size: 15px; font-weight: 700; line-height: 1.4; letter-spacing: -0.02em; color: #FFFFFF;">경북</span>
               <p style="margin: 6px 0 0; font-size: 15px; font-weight: 500; line-height: 1.7; letter-spacing: -0.01em; color: #CBCBCB; text-wrap: pretty;">포항 경주 김천 안동 구미 영주 영천 상주 문경 경산 의성 청송 영양 영덕 청도 고령 성주 칠곡 예천 봉화 울진 울릉</p>
               <p style="margin: 4px 0 0; font-size: 13px; font-weight: 400; line-height: 1.7; letter-spacing: 0; color: #7A8694; text-wrap: pretty;">왜관 포항북구 포항남구</p>
             </div>
@@ -525,7 +527,7 @@ section[data-screen-label='12 사업자 정보'] a{color:inherit !important;text
  </div>
 
  <div class="dc-mob" style="display:contents">
- <button type="button" data-dc-toggle aria-label="둘러보기" style="position: fixed; left: 50%; transform: translateX(-50%); bottom: calc(20px + env(safe-area-inset-bottom)); z-index: 70; height: 52px; padding: 0 26px; display: inline-flex; align-items: center; gap: 9px; border: none; border-radius: 60px; background: rgba(10, 12, 16, 0.72); -webkit-backdrop-filter: blur(14px) saturate(140%); backdrop-filter: blur(14px) saturate(140%); color: #FFFFFF; font-family: inherit; font-size: 15px; font-weight: 600; letter-spacing: -0.01em; cursor: pointer; box-shadow: 0 6px 22px rgba(0,0,0,0.30);"><span style="display:flex;flex-direction:column;gap:5px;"><span style="display:block;width:16px;height:2px;background:#FFF;"></span><span style="display:block;width:16px;height:2px;background:#FFF;"></span><span style="display:block;width:16px;height:2px;background:#FFF;"></span></span>둘러보기</button>
+ <button type="button" data-dc-toggle aria-label="둘러보기" style="position: fixed; left: 50%; transform: translateX(-50%); bottom: calc(20px + env(safe-area-inset-bottom)); z-index: 70; height: 52px; padding: 0 26px; display: inline-flex; align-items: center; gap: 9px; border: none; border-radius: 60px; background: rgba(10, 12, 16, 0.72); -webkit-backdrop-filter: blur(14px) saturate(140%); backdrop-filter: blur(14px) saturate(140%); color: #FFFFFF; font-family: inherit; font-size: 15px; font-weight: 500; letter-spacing: -0.01em; cursor: pointer; box-shadow: 0 6px 22px rgba(0,0,0,0.30);"><span style="display:flex;flex-direction:column;gap:5px;"><span style="display:block;width:16px;height:2px;background:#FFF;"></span><span style="display:block;width:16px;height:2px;background:#FFF;"></span><span style="display:block;width:16px;height:2px;background:#FFF;"></span></span>둘러보기</button>
 </div>
 
  <div id="dc-overlay" class="dc-overlay">
