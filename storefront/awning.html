@@ -293,6 +293,13 @@ body,button,input,select,textarea{font-family:inherit;word-break:keep-all;}
 h1,h2,h3,h4{letter-spacing:-0.02em;}
 section[data-screen-label='12 사업자 정보'] a{color:inherit !important;text-decoration:none !important;}
 @media (max-width:1023.98px){#dc-header button[data-dc-toggle]{display:none !important}#dc-header a[href^='sms:']{height:42px !important;line-height:42px !important;padding:0 16px !important;font-size: 13px !important;}#dc-header a[href^='sms:'] img{height:33px !important;width:33px !important;}#dc-header a[href^='sms:']{padding-left:5px !important;}}
+#dc-header{pointer-events:none}
+#dc-header a,#dc-header button{pointer-events:auto}
+@media (min-width:1024px){
+#dc-header>div{justify-content:flex-end !important}
+#dc-kakao{position:fixed;right:clamp(16px,1.6vw,24px);bottom:calc(clamp(16px,1.6vw,24px) + env(safe-area-inset-bottom));z-index:75}
+#dc-kakao .dckk{height:clamp(88px,9vw,132px) !important}
+}
 .dc-overlay{position:fixed;inset:0;z-index:60;pointer-events:none;visibility:hidden;}
 .dc-overlay>div{transform:translateY(-103%);transition:transform 0.55s cubic-bezier(.22,.61,.36,1);}
 .dc-overlay.open{pointer-events:auto;visibility:visible;}
@@ -363,7 +370,7 @@ section[data-screen-label='12 사업자 정보'] a{color:inherit !important;text
 
  <header data-screen-label="헤더" id="dc-header" style="position: fixed; top: 0; left: 0; right: 0; z-index: 80;">
  <div style="max-width: 1200px; margin: 0 auto; padding: 16px clamp(14px, 2.2vw, 28px); display: flex; align-items: center; justify-content: space-between; gap: 12px;">
-  <a href="https://pf.kakao.com/_PSxfan/chat" target="_blank" rel="noopener" aria-label="카카오톡 상담" style="display: inline-flex; align-items: center; text-decoration: none;">
+  <a href="https://pf.kakao.com/_PSxfan/chat" target="_blank" rel="noopener" aria-label="카카오톡 상담" id="dc-kakao" style="display: inline-flex; align-items: center; text-decoration: none;">
    <span class="dckkw"><img src="/images/kakao-talk5.png" alt="카카오톡 상담" style="height: clamp(84px, 10vw, 160px); width: auto; max-width: none; display: block; border: 0;" class="dckk"></span>
   </a>
   <div style="display: flex; align-items: center; gap: 10px;">
@@ -594,7 +601,7 @@ section[data-screen-label='12 사업자 정보'] a{color:inherit !important;text
 <script>
 (function(){
   var hdr=document.getElementById('dc-header');
-  if(hdr){ hdr.style.transform='translateY(0)'; }  // 260819: 헤더 상시 고정(자동 숨김 제거)
+  if(hdr){ hdr.style.transform='none'; }  // 260819: 헤더 상시 고정(자동 숨김 제거)
 
   var ov=document.getElementById('dc-overlay');
   var hideT=null;
