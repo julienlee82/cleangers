@@ -1,0 +1,17 @@
+{
+  "name": "파워클린져스 고압세척 | 경상권 건물위생관리업체",
+  "short_name": "파워클린져스",
+  "description": "경상권 건물위생관리업체",
+  "lang": "ko",
+  "start_url": "/",
+  "scope": "/",
+  "display": "browser",
+  "background_color": "#FFFFFF",
+  "theme_color": "#1CA2F3",
+  "icons": [
+    { "src": "/images/icon-tp-260821-32.png",  "sizes": "32x32",   "type": "image/png", "purpose": "any" },
+    { "src": "/images/icon-tp-260821-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/images/icon-tp-260821-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/images/icon-mask-260821-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
