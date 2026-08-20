@@ -152,6 +152,10 @@
 <style>
 @media (max-width:1023.98px){.dc-desk{display:none !important}}
 @media (min-width:1024px){.dc-mob{display:none !important}}
+.dckk:hover{transform: scale(1.05)}
+.dcgc:hover{transform: translateY(-3px) !important; border-color: #1CA2F3 !important; text-decoration: none !important}
+.dcgc:hover img{transform: scale(1.04) !important}
+.dcwmb::before{content: ''; position: absolute; right: -8%; top: 50%; transform: translateY(-50%); width: clamp(240px, 34cqi, 460px); height: clamp(240px, 34cqi, 460px); background-image: url(images/logo.png); background-size: contain; background-position: center; background-repeat: no-repeat; opacity: 0.1; pointer-events: none}
 html,body{background:#000000;margin:0;font-family:'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Pretendard', system-ui, -apple-system, 'Segoe UI', sans-serif;}
 body,button,input,select,textarea{font-family:inherit;word-break:keep-all;}
 h1,h2,h3,h4{letter-spacing:-0.02em;}
@@ -243,7 +247,7 @@ section[data-screen-label='12 사업자 정보'] a{color:inherit !important;text
  <header data-screen-label="헤더" id="dc-header" style="position: fixed; top: 0; left: 0; right: 0; z-index: 80;">
  <div style="max-width: 1200px; margin: 0 auto; padding: 16px clamp(14px, 2.2vw, 28px); display: flex; align-items: center; justify-content: space-between; gap: 12px;">
   <a href="https://pf.kakao.com/_PSxfan/chat" target="_blank" rel="noopener" aria-label="카카오톡 상담" style="display: inline-flex; align-items: center; text-decoration: none;">
-   <img src="images/kakao-talk2.png" alt="카카오톡 상담" style="height: clamp(64px, 7.4vw, 108px); width: auto; display: block; border-radius: 50%; filter: drop-shadow(0 4px 14px rgba(0,0,0,0.3));">
+   <img src="images/kakao-talk2.png" alt="카카오톡 상담" style="height: clamp(54px, 5.0vw, 74px); width: auto; display: block; filter: drop-shadow(0 6px 16px rgba(0,0,0,0.22)) drop-shadow(0 2px 5px rgba(0,0,0,0.14)); transition: transform 0.25s ease;" class="dckk">
   </a>
   <div style="display: flex; align-items: center; gap: 10px;">
    <a href="sms:01028310935" style="height: 48px; padding: 0 22px; display: inline-flex; align-items: center; justify-content: center; gap: 9px; white-space: nowrap; border: none; border-radius: 60px; color: #FFFFFF; background: rgba(8, 10, 14, 0.82); -webkit-backdrop-filter: blur(14px) saturate(140%); backdrop-filter: blur(14px) saturate(140%); font-family: inherit; font-size: 15px; font-weight: 500; line-height: 48px; letter-spacing: -0.01em; text-decoration: none; box-shadow: 0 2px 10px rgba(0,0,0,0.18); cursor: pointer; padding-left: 6px; gap: 8px;"><img src="images/logo-btn.png" alt="" aria-hidden="true" style="height: 38px; width: 38px; object-fit: contain; display: block; flex: 0 0 auto;">사진견적 문자접수</a>
@@ -418,30 +422,62 @@ section[data-screen-label='12 사업자 정보'] a{color:inherit !important;text
  <h2 style="margin: 0; font-size: clamp(30px, calc(30px + (100cqi - 959px) * 100), 56px); font-weight: 900; line-height: clamp(38px, calc(38px + (100cqi - 959px) * 100), 70px); letter-spacing: -0.02em; color: #000000;">현장이 증명합니다</h2>
 
  <div style="display: flex; flex-wrap: wrap; gap: clamp(12px, calc(12px + (100cqi - 767px) * 100), 24px); margin-top: 44px;">
- <figure style="flex: 0 0 clamp(calc(33.3333% - 16px), calc(50% - 8px - (100cqi - 767px) * 1000), calc(50% - 8px)); margin: 0; border: 1.5px solid #E4E8EE; border-radius: 16px; overflow: hidden; background: #FFFFFF;">
- <img src="images/gallery-01b.webp" alt="부산 상가건물 외벽 고압세척 작업" loading="lazy" class="dch31" style="transition: transform 0.3s ease; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: center; display: block; clip-path: polygon(0 0, 100% 0, 100% calc(100% - 24px), calc(100% - 24px) 100%, 0 100%); background-color: #F6F6F6; background-image: repeating-linear-gradient(135deg, #FFFFFF 0 10px, #F6F6F6 10px 20px); color: #131313; font-size: 13px; font-weight: 500;">
- <figcaption style="padding: 16px 20px; font-size: 18px; font-weight: 500; line-height: 1.5; letter-spacing: -0.01em; color: #000000;">부산 상가건물 외벽 고압세척</figcaption>
- </figure>
- <figure style="flex: 0 0 clamp(calc(33.3333% - 16px), calc(50% - 8px - (100cqi - 767px) * 1000), calc(50% - 8px)); margin: 0; border: 1.5px solid #E4E8EE; border-radius: 16px; overflow: hidden; background: #FFFFFF;">
- <img src="images/gallery-02b.webp" alt="대구 아파트 거실 외창 청소 자일로프 작업" loading="lazy" class="dch32" style="transition: transform 0.3s ease; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: center; display: block; clip-path: polygon(0 0, 100% 0, 100% calc(100% - 24px), calc(100% - 24px) 100%, 0 100%); background-color: #F6F6F6; background-image: repeating-linear-gradient(135deg, #FFFFFF 0 10px, #F6F6F6 10px 20px); color: #131313; font-size: 13px; font-weight: 500;">
- <figcaption style="padding: 16px 20px; font-size: 18px; font-weight: 500; line-height: 1.5; letter-spacing: -0.01em; color: #000000;">대구 아파트 거실 외창 청소</figcaption>
- </figure>
- <figure style="flex: 0 0 clamp(calc(33.3333% - 16px), calc(50% - 8px - (100cqi - 767px) * 1000), calc(50% - 8px)); margin: 0; border: 1.5px solid #E4E8EE; border-radius: 16px; overflow: hidden; background: #FFFFFF;">
- <img src="images/gallery-03b.webp" alt="울산 매장 간판 어닝 청소 작업" loading="lazy" class="dch33" style="transition: transform 0.3s ease; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: center; display: block; clip-path: polygon(0 0, 100% 0, 100% calc(100% - 24px), calc(100% - 24px) 100%, 0 100%); background-color: #F6F6F6; background-image: repeating-linear-gradient(135deg, #FFFFFF 0 10px, #F6F6F6 10px 20px); color: #131313; font-size: 13px; font-weight: 500;">
- <figcaption style="padding: 16px 20px; font-size: 18px; font-weight: 500; line-height: 1.5; letter-spacing: -0.01em; color: #000000;">울산 매장 간판 어닝 청소</figcaption>
- </figure>
- <figure style="flex: 0 0 clamp(calc(33.3333% - 16px), calc(50% - 8px - (100cqi - 767px) * 1000), calc(50% - 8px)); margin: 0; border: 1.5px solid #E4E8EE; border-radius: 16px; overflow: hidden; background: #FFFFFF;">
- <img src="images/gallery-04c.webp" alt="김해 아파트 단지 놀이시설 청소 작업" loading="lazy" class="dch34" style="transition: transform 0.3s ease; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: center; display: block; clip-path: polygon(0 0, 100% 0, 100% calc(100% - 24px), calc(100% - 24px) 100%, 0 100%); background-color: #F6F6F6; background-image: repeating-linear-gradient(135deg, #FFFFFF 0 10px, #F6F6F6 10px 20px); color: #131313; font-size: 13px; font-weight: 500;">
- <figcaption style="padding: 16px 20px; font-size: 18px; font-weight: 500; line-height: 1.5; letter-spacing: -0.01em; color: #000000;">김해 아파트 단지 놀이시설 청소</figcaption>
- </figure>
- <figure style="flex: 0 0 clamp(calc(33.3333% - 16px), calc(50% - 8px - (100cqi - 767px) * 1000), calc(50% - 8px)); margin: 0; border: 1.5px solid #E4E8EE; border-radius: 16px; overflow: hidden; background: #FFFFFF;">
- <img src="images/gallery-05b.webp" alt="경남 창원 빌딩 유리창 로프 청소 작업" loading="lazy" class="dch35" style="transition: transform 0.3s ease; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: center; display: block; clip-path: polygon(0 0, 100% 0, 100% calc(100% - 24px), calc(100% - 24px) 100%, 0 100%); background-color: #F6F6F6; background-image: repeating-linear-gradient(135deg, #FFFFFF 0 10px, #F6F6F6 10px 20px); color: #131313; font-size: 13px; font-weight: 500;">
- <figcaption style="padding: 16px 20px; font-size: 18px; font-weight: 500; line-height: 1.5; letter-spacing: -0.01em; color: #000000;">경남 창원 빌딩 유리창 로프 청소</figcaption>
- </figure>
- <figure style="flex: 0 0 clamp(calc(33.3333% - 16px), calc(50% - 8px - (100cqi - 767px) * 1000), calc(50% - 8px)); margin: 0; border: 1.5px solid #E4E8EE; border-radius: 16px; overflow: hidden; background: #FFFFFF;">
- <img src="images/gallery-06b.webp" alt="경북 포항 글램핑장 텐트 돔 세척 작업" loading="lazy" class="dch36" style="transition: transform 0.3s ease; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: center; display: block; clip-path: polygon(0 0, 100% 0, 100% calc(100% - 24px), calc(100% - 24px) 100%, 0 100%); background-color: #F6F6F6; background-image: repeating-linear-gradient(135deg, #FFFFFF 0 10px, #F6F6F6 10px 20px); color: #131313; font-size: 13px; font-weight: 500;">
- <figcaption style="padding: 16px 20px; font-size: 18px; font-weight: 500; line-height: 1.5; letter-spacing: -0.01em; color: #000000;">경북 포항 글램핑장 텐트 돔 세척</figcaption>
- </figure>
+ <a href="/storefront/facade" style="flex: 0 0 clamp(calc(25% - 18px), calc(50% - 8px - (100cqi - 767px) * 1000), calc(50% - 8px)); margin: 0; border: 1.5px solid #E4E8EE; border-radius: 16px; overflow: hidden; background: #FFFFFF; display: flex; flex-direction: column; color: #000000; text-decoration: none; transition: transform 0.18s ease, border-color 0.18s ease;" class="dcgc">
+  <img src="images/rv-facade.webp" alt="부산 상가 매장 전면 외관 유리 청소 작업" loading="lazy" style="transition: transform 0.3s ease; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: center; display: block; clip-path: polygon(0 0, 100% 0, 100% calc(100% - 24px), calc(100% - 24px) 100%, 0 100%); background-color: #F6F6F6; background-image: repeating-linear-gradient(135deg, #FFFFFF 0 10px, #F6F6F6 10px 20px); color: #131313; font-size: 13px; font-weight: 500;">
+  <div style="padding: 16px 20px 18px; display: flex; flex-direction: column; gap: 10px; flex: 1 1 auto;">
+   <span style="font-size: 18px; font-weight: 500; line-height: 1.5; letter-spacing: -0.01em; color: #000000;">부산 매장 외관청소</span>
+   <span style="margin-top: auto; align-self: flex-end; font-size: 14px; font-weight: 700; line-height: 1.5; letter-spacing: -0.01em; color: #1CA2F3;">후기 보기 →</span>
+  </div>
+ </a>
+ <a href="/exterior/building" style="flex: 0 0 clamp(calc(25% - 18px), calc(50% - 8px - (100cqi - 767px) * 1000), calc(50% - 8px)); margin: 0; border: 1.5px solid #E4E8EE; border-radius: 16px; overflow: hidden; background: #FFFFFF; display: flex; flex-direction: column; color: #000000; text-decoration: none; transition: transform 0.18s ease, border-color 0.18s ease;" class="dcgc">
+  <img src="images/rv-building.webp" alt="울산 건물 외벽 고소작업차 고압세척 작업" loading="lazy" style="transition: transform 0.3s ease; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: center; display: block; clip-path: polygon(0 0, 100% 0, 100% calc(100% - 24px), calc(100% - 24px) 100%, 0 100%); background-color: #F6F6F6; background-image: repeating-linear-gradient(135deg, #FFFFFF 0 10px, #F6F6F6 10px 20px); color: #131313; font-size: 13px; font-weight: 500;">
+  <div style="padding: 16px 20px 18px; display: flex; flex-direction: column; gap: 10px; flex: 1 1 auto;">
+   <span style="font-size: 18px; font-weight: 500; line-height: 1.5; letter-spacing: -0.01em; color: #000000;">울산 건물외벽 고압세척</span>
+   <span style="margin-top: auto; align-self: flex-end; font-size: 14px; font-weight: 700; line-height: 1.5; letter-spacing: -0.01em; color: #1CA2F3;">후기 보기 →</span>
+  </div>
+ </a>
+ <a href="/exterior/living" style="flex: 0 0 clamp(calc(25% - 18px), calc(50% - 8px - (100cqi - 767px) * 1000), calc(50% - 8px)); margin: 0; border: 1.5px solid #E4E8EE; border-radius: 16px; overflow: hidden; background: #FFFFFF; display: flex; flex-direction: column; color: #000000; text-decoration: none; transition: transform 0.18s ease, border-color 0.18s ease;" class="dcgc">
+  <img src="images/rv-living.webp" alt="대구 아파트 거실 통창 바깥 유리 청소 작업" loading="lazy" style="transition: transform 0.3s ease; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: center; display: block; clip-path: polygon(0 0, 100% 0, 100% calc(100% - 24px), calc(100% - 24px) 100%, 0 100%); background-color: #F6F6F6; background-image: repeating-linear-gradient(135deg, #FFFFFF 0 10px, #F6F6F6 10px 20px); color: #131313; font-size: 13px; font-weight: 500;">
+  <div style="padding: 16px 20px 18px; display: flex; flex-direction: column; gap: 10px; flex: 1 1 auto;">
+   <span style="font-size: 18px; font-weight: 500; line-height: 1.5; letter-spacing: -0.01em; color: #000000;">대구 아파트 거실 외창청소</span>
+   <span style="margin-top: auto; align-self: flex-end; font-size: 14px; font-weight: 700; line-height: 1.5; letter-spacing: -0.01em; color: #1CA2F3;">후기 보기 →</span>
+  </div>
+ </a>
+ <a href="/storefront/window" style="flex: 0 0 clamp(calc(25% - 18px), calc(50% - 8px - (100cqi - 767px) * 1000), calc(50% - 8px)); margin: 0; border: 1.5px solid #E4E8EE; border-radius: 16px; overflow: hidden; background: #FFFFFF; display: flex; flex-direction: column; color: #000000; text-decoration: none; transition: transform 0.18s ease, border-color 0.18s ease;" class="dcgc">
+  <img src="images/rv-window.webp" alt="창원 매장 창문 스티커 자국 제거 작업" loading="lazy" style="transition: transform 0.3s ease; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: center; display: block; clip-path: polygon(0 0, 100% 0, 100% calc(100% - 24px), calc(100% - 24px) 100%, 0 100%); background-color: #F6F6F6; background-image: repeating-linear-gradient(135deg, #FFFFFF 0 10px, #F6F6F6 10px 20px); color: #131313; font-size: 13px; font-weight: 500;">
+  <div style="padding: 16px 20px 18px; display: flex; flex-direction: column; gap: 10px; flex: 1 1 auto;">
+   <span style="font-size: 18px; font-weight: 500; line-height: 1.5; letter-spacing: -0.01em; color: #000000;">창원 창문 스티커제거</span>
+   <span style="margin-top: auto; align-self: flex-end; font-size: 14px; font-weight: 700; line-height: 1.5; letter-spacing: -0.01em; color: #1CA2F3;">후기 보기 →</span>
+  </div>
+ </a>
+ <a href="/outdoor/playground" style="flex: 0 0 clamp(calc(25% - 18px), calc(50% - 8px - (100cqi - 767px) * 1000), calc(50% - 8px)); margin: 0; border: 1.5px solid #E4E8EE; border-radius: 16px; overflow: hidden; background: #FFFFFF; display: flex; flex-direction: column; color: #000000; text-decoration: none; transition: transform 0.18s ease, border-color 0.18s ease;" class="dcgc">
+  <img src="images/rv-playground.webp" alt="양산 아파트 단지 놀이터 놀이기구 고압세척 작업" loading="lazy" style="transition: transform 0.3s ease; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: center; display: block; clip-path: polygon(0 0, 100% 0, 100% calc(100% - 24px), calc(100% - 24px) 100%, 0 100%); background-color: #F6F6F6; background-image: repeating-linear-gradient(135deg, #FFFFFF 0 10px, #F6F6F6 10px 20px); color: #131313; font-size: 13px; font-weight: 500;">
+  <div style="padding: 16px 20px 18px; display: flex; flex-direction: column; gap: 10px; flex: 1 1 auto;">
+   <span style="font-size: 18px; font-weight: 500; line-height: 1.5; letter-spacing: -0.01em; color: #000000;">양산 아파트 단지 놀이터 청소</span>
+   <span style="margin-top: auto; align-self: flex-end; font-size: 14px; font-weight: 700; line-height: 1.5; letter-spacing: -0.01em; color: #1CA2F3;">후기 보기 →</span>
+  </div>
+ </a>
+ <a href="/outdoor/tent" style="flex: 0 0 clamp(calc(25% - 18px), calc(50% - 8px - (100cqi - 767px) * 1000), calc(50% - 8px)); margin: 0; border: 1.5px solid #E4E8EE; border-radius: 16px; overflow: hidden; background: #FFFFFF; display: flex; flex-direction: column; color: #000000; text-decoration: none; transition: transform 0.18s ease, border-color 0.18s ease;" class="dcgc">
+  <img src="images/rv-tent.webp" alt="포항 글램핑장 돔 텐트 외피 고압세척 작업" loading="lazy" style="transition: transform 0.3s ease; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: center; display: block; clip-path: polygon(0 0, 100% 0, 100% calc(100% - 24px), calc(100% - 24px) 100%, 0 100%); background-color: #F6F6F6; background-image: repeating-linear-gradient(135deg, #FFFFFF 0 10px, #F6F6F6 10px 20px); color: #131313; font-size: 13px; font-weight: 500;">
+  <div style="padding: 16px 20px 18px; display: flex; flex-direction: column; gap: 10px; flex: 1 1 auto;">
+   <span style="font-size: 18px; font-weight: 500; line-height: 1.5; letter-spacing: -0.01em; color: #000000;">포항 글램핑장 텐트 세척</span>
+   <span style="margin-top: auto; align-self: flex-end; font-size: 14px; font-weight: 700; line-height: 1.5; letter-spacing: -0.01em; color: #1CA2F3;">후기 보기 →</span>
+  </div>
+ </a>
+ <a href="/outdoor/solar" style="flex: 0 0 clamp(calc(25% - 18px), calc(50% - 8px - (100cqi - 767px) * 1000), calc(50% - 8px)); margin: 0; border: 1.5px solid #E4E8EE; border-radius: 16px; overflow: hidden; background: #FFFFFF; display: flex; flex-direction: column; color: #000000; text-decoration: none; transition: transform 0.18s ease, border-color 0.18s ease;" class="dcgc">
+  <img src="images/rv-solar.webp" alt="경주 태양광 패널 배열 고압세척 작업" loading="lazy" style="transition: transform 0.3s ease; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: center; display: block; clip-path: polygon(0 0, 100% 0, 100% calc(100% - 24px), calc(100% - 24px) 100%, 0 100%); background-color: #F6F6F6; background-image: repeating-linear-gradient(135deg, #FFFFFF 0 10px, #F6F6F6 10px 20px); color: #131313; font-size: 13px; font-weight: 500;">
+  <div style="padding: 16px 20px 18px; display: flex; flex-direction: column; gap: 10px; flex: 1 1 auto;">
+   <span style="font-size: 18px; font-weight: 500; line-height: 1.5; letter-spacing: -0.01em; color: #000000;">경주 태양광 패널 세척</span>
+   <span style="margin-top: auto; align-self: flex-end; font-size: 14px; font-weight: 700; line-height: 1.5; letter-spacing: -0.01em; color: #1CA2F3;">후기 보기 →</span>
+  </div>
+ </a>
+ <a href="/outdoor/shower-washroom" style="flex: 0 0 clamp(calc(25% - 18px), calc(50% - 8px - (100cqi - 767px) * 1000), calc(50% - 8px)); margin: 0; border: 1.5px solid #E4E8EE; border-radius: 16px; overflow: hidden; background: #FFFFFF; display: flex; flex-direction: column; color: #000000; text-decoration: none; transition: transform 0.18s ease, border-color 0.18s ease;" class="dcgc">
+  <img src="images/rv-shower-washroom.webp" alt="김해 샤워장 세면장 바닥 타일 세척 작업" loading="lazy" style="transition: transform 0.3s ease; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: center; display: block; clip-path: polygon(0 0, 100% 0, 100% calc(100% - 24px), calc(100% - 24px) 100%, 0 100%); background-color: #F6F6F6; background-image: repeating-linear-gradient(135deg, #FFFFFF 0 10px, #F6F6F6 10px 20px); color: #131313; font-size: 13px; font-weight: 500;">
+  <div style="padding: 16px 20px 18px; display: flex; flex-direction: column; gap: 10px; flex: 1 1 auto;">
+   <span style="font-size: 18px; font-weight: 500; line-height: 1.5; letter-spacing: -0.01em; color: #000000;">김해 샤워장 세면장 세척</span>
+   <span style="margin-top: auto; align-self: flex-end; font-size: 14px; font-weight: 700; line-height: 1.5; letter-spacing: -0.01em; color: #1CA2F3;">후기 보기 →</span>
+  </div>
+ </a>
  </div>
 
  <div style="display: flex; margin-top: clamp(44px, calc(44px + (100cqi - 767px) * 100), 64px);">
@@ -456,7 +492,7 @@ section[data-screen-label='12 사업자 정보'] a{color:inherit !important;text
 
  <div style="display: flex; flex-wrap: wrap; gap: clamp(12px, calc(12px + (100cqi - 767px) * 100), 24px); margin-top: 44px;">
  <article style="flex: 0 0 clamp(calc(25% - 18px), calc(50% - 8px - (100cqi - 767px) * 1000), calc(50% - 8px)); border: 1.5px solid #E4E8EE; border-radius: 16px; overflow: hidden; background: #FFFFFF;">
- <img src="images/step-i1.webp" alt="부산 건물 외벽 오염 부위 촬영 사진 접수" loading="lazy" class="dch38" style="transition: transform 0.3s ease; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: center; display: block; clip-path: polygon(0 0, 100% 0, 100% calc(100% - 24px), calc(100% - 24px) 100%, 0 100%); background-color: #F6F6F6; background-image: repeating-linear-gradient(135deg, #FFFFFF 0 10px, #F6F6F6 10px 20px); color: #131313; font-size: 13px; font-weight: 500;">
+ <img src="images/stp-i1.webp" alt="부산 건물 외벽 오염 부위 촬영 사진 접수" loading="lazy" class="dch38" style="transition: transform 0.3s ease; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: center; display: block; clip-path: polygon(0 0, 100% 0, 100% calc(100% - 24px), calc(100% - 24px) 100%, 0 100%); background-color: #F6F6F6; background-image: repeating-linear-gradient(135deg, #FFFFFF 0 10px, #F6F6F6 10px 20px); color: #131313; font-size: 13px; font-weight: 500;">
  <div style="padding: 24px; display: flex; flex-direction: column; gap: 8px;">
  <span style="font-size: clamp(32px, calc(32px + (100cqi - 767px) * 100), 56px); font-weight: 700; line-height: 1.1; letter-spacing: -0.02em; color: #1CA2F3;">1</span>
  <h3 style="margin: 0; font-size: clamp(24px, calc(24px + (100cqi - 959px) * 100), 32px); font-weight: 700; line-height: 1.3; letter-spacing: -0.02em; color: #000000;">사진 접수</h3>
@@ -464,7 +500,7 @@ section[data-screen-label='12 사업자 정보'] a{color:inherit !important;text
  </div>
  </article>
  <article style="flex: 0 0 clamp(calc(25% - 18px), calc(50% - 8px - (100cqi - 767px) * 1000), calc(50% - 8px)); border: 1.5px solid #E4E8EE; border-radius: 16px; overflow: hidden; background: #FFFFFF;">
- <img src="images/step-i2.webp" alt="부산 건물 외벽 고압세척 당일 견적 안내" loading="lazy" class="dch39" style="transition: transform 0.3s ease; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: center; display: block; clip-path: polygon(0 0, 100% 0, 100% calc(100% - 24px), calc(100% - 24px) 100%, 0 100%); background-color: #F6F6F6; background-image: repeating-linear-gradient(135deg, #FFFFFF 0 10px, #F6F6F6 10px 20px); color: #131313; font-size: 13px; font-weight: 500;">
+ <img src="images/stp-i2.webp" alt="부산 건물 외벽 고압세척 당일 견적 안내" loading="lazy" class="dch39" style="transition: transform 0.3s ease; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: center; display: block; clip-path: polygon(0 0, 100% 0, 100% calc(100% - 24px), calc(100% - 24px) 100%, 0 100%); background-color: #F6F6F6; background-image: repeating-linear-gradient(135deg, #FFFFFF 0 10px, #F6F6F6 10px 20px); color: #131313; font-size: 13px; font-weight: 500;">
  <div style="padding: 24px; display: flex; flex-direction: column; gap: 8px;">
  <span style="font-size: clamp(32px, calc(32px + (100cqi - 767px) * 100), 56px); font-weight: 700; line-height: 1.1; letter-spacing: -0.02em; color: #1CA2F3;">2</span>
  <h3 style="margin: 0; font-size: clamp(24px, calc(24px + (100cqi - 959px) * 100), 32px); font-weight: 700; line-height: 1.3; letter-spacing: -0.02em; color: #000000;">당일 견적</h3>
@@ -472,7 +508,7 @@ section[data-screen-label='12 사업자 정보'] a{color:inherit !important;text
  </div>
  </article>
  <article style="flex: 0 0 clamp(calc(25% - 18px), calc(50% - 8px - (100cqi - 767px) * 1000), calc(50% - 8px)); border: 1.5px solid #E4E8EE; border-radius: 16px; overflow: hidden; background: #FFFFFF;">
- <img src="images/step-i3.webp" alt="부산 매장 주변 보양 후 고압세척 작업" loading="lazy" class="dch40" style="transition: transform 0.3s ease; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: center; display: block; clip-path: polygon(0 0, 100% 0, 100% calc(100% - 24px), calc(100% - 24px) 100%, 0 100%); background-color: #F6F6F6; background-image: repeating-linear-gradient(135deg, #FFFFFF 0 10px, #F6F6F6 10px 20px); color: #131313; font-size: 13px; font-weight: 500;">
+ <img src="images/stp-i3.webp" alt="부산 매장 주변 보양 후 고압세척 작업" loading="lazy" class="dch40" style="transition: transform 0.3s ease; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: center; display: block; clip-path: polygon(0 0, 100% 0, 100% calc(100% - 24px), calc(100% - 24px) 100%, 0 100%); background-color: #F6F6F6; background-image: repeating-linear-gradient(135deg, #FFFFFF 0 10px, #F6F6F6 10px 20px); color: #131313; font-size: 13px; font-weight: 500;">
  <div style="padding: 24px; display: flex; flex-direction: column; gap: 8px;">
  <span style="font-size: clamp(32px, calc(32px + (100cqi - 767px) * 100), 56px); font-weight: 700; line-height: 1.1; letter-spacing: -0.02em; color: #1CA2F3;">3</span>
  <h3 style="margin: 0; font-size: clamp(24px, calc(24px + (100cqi - 959px) * 100), 32px); font-weight: 700; line-height: 1.3; letter-spacing: -0.02em; color: #000000;">보양 세척</h3>
@@ -480,7 +516,7 @@ section[data-screen-label='12 사업자 정보'] a{color:inherit !important;text
  </div>
  </article>
  <article style="flex: 0 0 clamp(calc(25% - 18px), calc(50% - 8px - (100cqi - 767px) * 1000), calc(50% - 8px)); border: 1.5px solid #E4E8EE; border-radius: 16px; overflow: hidden; background: #FFFFFF;">
- <img src="images/step-i4.webp" alt="부산 건물 외벽 고압세척 마무리 점검" loading="lazy" class="dch41" style="transition: transform 0.3s ease; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: center; display: block; clip-path: polygon(0 0, 100% 0, 100% calc(100% - 24px), calc(100% - 24px) 100%, 0 100%); background-color: #F6F6F6; background-image: repeating-linear-gradient(135deg, #FFFFFF 0 10px, #F6F6F6 10px 20px); color: #131313; font-size: 13px; font-weight: 500;">
+ <img src="images/stp-i4.webp" alt="부산 건물 외벽 고압세척 마무리 점검" loading="lazy" class="dch41" style="transition: transform 0.3s ease; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: center; display: block; clip-path: polygon(0 0, 100% 0, 100% calc(100% - 24px), calc(100% - 24px) 100%, 0 100%); background-color: #F6F6F6; background-image: repeating-linear-gradient(135deg, #FFFFFF 0 10px, #F6F6F6 10px 20px); color: #131313; font-size: 13px; font-weight: 500;">
  <div style="padding: 24px; display: flex; flex-direction: column; gap: 8px;">
  <span style="font-size: clamp(32px, calc(32px + (100cqi - 767px) * 100), 56px); font-weight: 700; line-height: 1.1; letter-spacing: -0.02em; color: #1CA2F3;">4</span>
  <h3 style="margin: 0; font-size: clamp(24px, calc(24px + (100cqi - 959px) * 100), 32px); font-weight: 700; line-height: 1.3; letter-spacing: -0.02em; color: #000000;">마무리 점검</h3>
@@ -489,7 +525,7 @@ section[data-screen-label='12 사업자 정보'] a{color:inherit !important;text
  </article>
  </div>
  <div style="display: flex; margin-top: clamp(32px, calc(32px + (100cqi - 767px) * 100), 48px);">
- <a href="/cases" style="display: inline-flex; align-items: center; justify-content: center; border-radius: 60px; padding: 16px 32px; font-size: clamp(15px, calc(15px + (100cqi - 959px) * 100), 18px); font-weight: 500; line-height: 1.5; letter-spacing: -0.01em; white-space: nowrap; background: #1CA2F3; color: #FFFFFF; text-decoration: none; box-shadow: none; transition: transform 0.25s ease, background 0.25s ease;" class="dch42">청소후기 더 보기</a>
+ <a href="https://pf.kakao.com/_PSxfan/chat" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; justify-content: center; border-radius: 60px; padding: 16px 32px; font-size: clamp(15px, calc(15px + (100cqi - 959px) * 100), 18px); font-weight: 500; line-height: 1.5; letter-spacing: -0.01em; white-space: nowrap; background: #1CA2F3; color: #FFFFFF; text-decoration: none; box-shadow: none; transition: transform 0.25s ease, background 0.25s ease;" class="dch42">카카오톡으로 사진 보내기</a>
  </div>
  </div>
  </section>
@@ -696,7 +732,8 @@ section[data-screen-label='12 사업자 정보'] a{color:inherit !important;text
             el.style.transition='opacity 0.6s ease '+(i*0.08)+'s, transform 0.6s ease '+(i*0.08)+'s';
             el.style.opacity='1'; el.style.transform='none'; });
           io.unobserve(e.target); });
-      },{threshold:0.12, rootMargin:'0px 0px -8% 0px'});
+      },{threshold:0.01, rootMargin:'0px 0px -5% 0px'});
+      setTimeout(function(){ secs.forEach(function(sec){ prep(sec).forEach(function(el){ if(el.style.opacity==='0'){ el.style.transition='opacity 0.5s ease, transform 0.5s ease'; el.style.opacity='1'; el.style.transform='none'; } }); }); }, 2600);
       secs.forEach(function(sec){ io.observe(sec); });
     }
   }catch(err){}
